@@ -12,7 +12,7 @@ body:
     attributes:
       value: |
         > [!IMPORTANT]
-        > Before submitting, please read the **[Contribution Guidelines](https://github.com/awesome-jellyfin/awesome-jellyfin/blob/main/CONTRIBUTING.md)**.
+        > Before submitting, please read the **[Contribution Guidelines](https://github.com/awesome-silo/awesome-silo/blob/main/CONTRIBUTING.md)**.
         >  
         > If you are familiar with GitHub and know how to create a Pull Request, please consider submitting your suggestion **directly as a PR** instead of opening an issue:
         > https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request
@@ -33,7 +33,7 @@ body:
     attributes:
       label: Client Website
       description: Link to the project (e.g. GitHub)
-      placeholder: ex. https://github.com/awesome-jellyfin/awesome-jellyfin
+      placeholder: ex. https://github.com/awesome-silo/awesome-silo
     validations:
       required: true
       
@@ -73,7 +73,7 @@ body:
       label: Download Links
       description: Please provide all download links you can find, e.g. App Store, Play Store, ...
       placeholder: |
-        GitHub: https://github.com/awesome-jellyfin/client
+        GitHub: https://github.com/awesome-silo/client
         App Store: https://apps.apple.com/app/id0000000000
     validations:
       required: true

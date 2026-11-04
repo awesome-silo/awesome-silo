@@ -11,7 +11,7 @@ body:
     attributes:
       value: |
         > [!IMPORTANT]
-        > Before submitting, please read the **[Contribution Guidelines](https://github.com/awesome-jellyfin/awesome-jellyfin/blob/main/CONTRIBUTING.md)**.
+        > Before submitting, please read the **[Contribution Guidelines](https://github.com/awesome-silo/awesome-silo/blob/main/CONTRIBUTING.md)**.
         >  
         > If you are familiar with GitHub and know how to create a Pull Request, please consider submitting your suggestion **directly as a PR** instead of opening an issue:
         > https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request
@@ -25,7 +25,7 @@ body:
     attributes:
       label: Project Website
       description: Link to the project (usually a GitHub repository)
-      placeholder: https://github.com/awesome-jellyfin/awesome-jellyfin
+      placeholder: https://github.com/awesome-silo/awesome-silo
     validations:
       required: true
       
@@ -49,11 +49,11 @@ body:
           - **Neutral tone** (no promotion)  
           - **Do not mention implementation technologies** (e.g. "built with Python")  
           - **Start with a capital letter and end with a period**  
-          - **Use proper names** (e.g. `Jellyfin`, `TMDb`)
+          - **Use proper names** (e.g. `Silo`, `TMDb`)
 
         Example:
         ```
-        Fingerprint audio to automatically detect intro and outro segments in Jellyfin.
+        Fingerprint audio to automatically detect intro and outro segments in Silo.
         ```
 
         It may contain links or tags (such as `🔹 Beta`).

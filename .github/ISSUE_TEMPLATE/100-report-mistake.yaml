@@ -10,7 +10,7 @@ body:
     attributes:
       value: |
         > [!IMPORTANT]
-        > Before submitting, please read the **[Contribution Guidelines](https://github.com/awesome-jellyfin/awesome-jellyfin/blob/main/CONTRIBUTING.md)**.
+        > Before submitting, please read the **[Contribution Guidelines](https://github.com/awesome-silo/awesome-silo/blob/main/CONTRIBUTING.md)**.
         >  
         > If you are familiar with GitHub and know how to create a Pull Request, please consider submitting your suggestion **directly as a PR** instead of opening an issue:
         > https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request
@@ -24,7 +24,7 @@ body:
     attributes:
       label: "What's the problem?"
       description: Briefly describe the error / suggest changes
-      placeholder: "wrote 'Jelyfin' instead of 'Jellyfin'"
+      placeholder: "wrote 'Sighlo' instead of 'Silo'"
     validations:
       required: true
       
@@ -33,7 +33,7 @@ body:
     attributes:
       label: "Where's the problem?"
       description: Line Number of the problem
-      placeholder: "ex. https://github.com/awesome-jellyfin/awesome-jellyfin/blob/main/README.md?plain=1#L20"
+      placeholder: "ex. https://github.com/awesome-silo/awesome-silo/blob/main/README.md?plain=1#L20"
     validations:
       required: true
     
@@ -41,4 +41,4 @@ body:
     attributes:
       value: |
         > Please enter the Line Number of the problem to make it easier for us to find the problem. 
-        > You can find the line numbers [here](https://github.com/awesome-jellyfin/awesome-jellyfin/blob/main/README.md?plain=1). You can click on the line numbers to get the URL for the clicked line.
+        > You can find the line numbers [here](https://github.com/awesome-silo/awesome-silo/blob/main/README.md?plain=1). You can click on the line numbers to get the URL for the clicked line.

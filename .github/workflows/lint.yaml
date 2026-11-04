@@ -18,4 +18,4 @@ jobs:
         with:
           bun-version: latest
 
-      - run: bunx https://github.com/awesome-jellyfin/awesome-lint
+      - run: bunx https://github.com/awesome-silo/awesome-lint
