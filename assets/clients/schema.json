@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://github.com/awesome-jellyfin/awesome-jellyfin/blob/main/assets/clients/schema.json",
-  "title": "awesome-jellyfin clients",
+  "$id": "https://github.com/awesome-silo/awesome-silo/blob/main/assets/clients/schema.json",
+  "title": "awesome-silo clients",
   "description": "clients.yaml (clients, targets and types) or a file in clients.d (owners and clients).",
   "type": "object",
   "additionalProperties": false,

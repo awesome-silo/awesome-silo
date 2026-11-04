@@ -1,6 +1,6 @@
 # Silo Client YAML Configuration Format
 
-The [bot](https://github.com/awesome-jellyfin/bot) generates `CLIENTS.md` from `clients.yaml`, the files in [`clients.d`](clients.d/README.md) and the template [`CLIENTS.md.tmpl`](CLIENTS.md.tmpl).
+The [bot](https://github.com/awesome-silo/bot) generates `CLIENTS.md` from `clients.yaml`, the files in [`clients.d`](clients.d/README.md) and the template [`CLIENTS.md.tmpl`](CLIENTS.md.tmpl).
 
 [`schema.json`](schema.json) describes the format of `clients.yaml` and the `clients.d` files. Editors that support the `yaml-language-server` comment at the top of each file use it to check fields and suggest values as you type.
 

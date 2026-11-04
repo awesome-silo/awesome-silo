@@ -8,7 +8,7 @@ To make changes, please edit those YAML files instead.
 
 <p align="center">
   <img src="assets/banner.png" />
-  <h1 align="center"><a href="https://github.com/awesome-jellyfin/awesome-jellyfin">Awesome Jellyfin</a> > Clients</h1>
+  <h1 align="center"><a href="https://github.com/awesome-silo/awesome-silo">Awesome Jellyfin</a> > Clients</h1>
 </p>
 
 # By Environment

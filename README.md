@@ -125,13 +125,13 @@
 
 ## 🌌 Related
 
-This section includes software, guides and tools that are not *specifically* designed to work with Jellyfin, but can be useful for tasks related to media management or to enhance Jellyfin's functionality.
+This section includes software, guides and tools that are not *specifically* designed to work with Silo, but can be useful for tasks related to media management or to enhance Silo's functionality.
 
 <!-- sort list:related -->
 
 ## Communities
 
-This section contains links to communities which focus on Jellyfin or related topics.
+This section contains links to communities which focus on Silo or related topics.
 
 <!-- list:communities -->
 - [Silo Discord](https://discord.gg/siloserver) - The official Silo Discord server. `🔰 Official`
