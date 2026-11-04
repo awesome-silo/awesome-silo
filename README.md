@@ -155,7 +155,7 @@ This section includes software, guides and tools that are not *specifically* des
 This section contains links to communities which focus on Jellyfin or related topics.
 
 <!-- list:communities -->
-- [Silo Discord](https://discord.gg/c3Rkf7nwVN) - The official Silo Discord server. `🔰 Official`
+- [Silo Discord](https://discord.gg/siloserver) - The official Silo Discord server. `🔰 Official`
 
 ## Contribute
 
