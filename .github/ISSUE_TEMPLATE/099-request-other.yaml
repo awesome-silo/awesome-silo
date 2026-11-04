@@ -1,0 +1,78 @@
+name: "✨ Request something else"
+description: >
+  Do you have anything else that is not yet listed and want it to be listed in the repo?
+
+title: "Add <project>"
+labels: 
+  - request
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        > [!IMPORTANT]
+        > Before submitting, please read the **[Contribution Guidelines](https://github.com/awesome-jellyfin/awesome-jellyfin/blob/main/CONTRIBUTING.md)**.
+        >  
+        > If you are familiar with GitHub and know how to create a Pull Request, please consider submitting your suggestion **directly as a PR** instead of opening an issue:
+        > https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request
+        >
+        > Pull Requests are usually reviewed faster. Issues are mainly intended for users who are unsure how to contribute via PR.
+        
+        **Thank you so much for your help to make this list even better! 💖**
+      
+  - type: input
+    id: project-website
+    attributes:
+      label: Project Website
+      description: Link to the project (usually a GitHub repository)
+      placeholder: https://github.com/awesome-jellyfin/awesome-jellyfin
+    validations:
+      required: true
+      
+  - type: textarea
+    id: project-description
+    attributes:
+      label: Project Description
+      description: A general description of the project.
+    validations:
+      required: true
+
+  - type: input
+    id: short-description
+    attributes:
+      label: Short Description
+      description: |
+        This description will appear in the awesome list.
+
+        Requirements:
+          - **1 sentence** (max 2)  
+          - **Neutral tone** (no promotion)  
+          - **Do not mention implementation technologies** (e.g. "built with Python")  
+          - **Start with a capital letter and end with a period**  
+          - **Use proper names** (e.g. `Jellyfin`, `TMDb`)
+
+        Example:
+        ```
+        Fingerprint audio to automatically detect intro and outro segments in Jellyfin.
+        ```
+
+        It may contain links or tags (such as `🔹 Beta`).
+    validations:
+      required: true
+  
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Checklist
+      options:
+        - label: I have read the Contribution Guidelines
+          required: true
+        - label: The project appears to be actively maintained
+          required: true
+        - label: I searched the list to make sure this project is not already included
+          required: true
+  
+  - type: textarea
+    id: other
+    attributes:
+      label: Anything else?
