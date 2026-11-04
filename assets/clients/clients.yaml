@@ -1,0 +1,853 @@
+# yaml-language-server: $schema=./schema.json
+clients:
+  - name: "Silo for Web"
+    targets: [Browser]
+    types: [Native]
+    oss: https://github.com/Silo-Server/silo-server
+    price:
+      free: true
+    downloads:
+      - type: github
+        owner: Silo-Server
+        repo: silo-server
+
+  - name: "Silo for Apple"
+    targets: [iOS, tvOS, macOS]
+    types: [Native]
+    oss: https://github.com/Silo-Server/silo-apple
+    official: true
+    price:
+      free: true
+    downloads:
+      - type: github
+        owner: Silo-Server
+        repo: silo-apple
+
+  - name: "Silo for Android"
+    targets: [Android]
+    types: [Native]
+    oss: https://github.com/Silo-Server/silo-android
+    official: true
+    price:
+      free: true
+    downloads:
+      - type: github
+        owner: Silo-Server
+        repo: silo-android
+      - type: google-play
+        id: org.siloserver.silo
+
+  - name: "Silo for Roku"
+    targets: [Roku]
+    types: [Native]
+    oss: https://github.com/Silo-Server/silo-roku
+    official: true
+    price:
+      free: true
+    downloads:
+      - type: github
+        owner: Silo-Server
+        repo: silo-roku
+
+  - name: Plozz
+    targets: [iOS]
+    types: [Native]
+    oss: https://github.com/brandomoore/Plozz
+    official: false
+    beta: false
+    price:
+      free: true
+      paid: false
+    downloads:
+      - type: app-store
+        id: "6782668147"
+
+  - name: "granary"
+    targets: [Windows]
+    types: [Native]
+    oss: https://github.com/JoKerIsCraZy/granary
+    official: false
+    beta: true
+    downloads:
+      - type: github
+        owner: JoKerIsCraZy
+        repo: granary
+
+  - name: "silage"
+    targets: [Linux, Windows]
+    types: [Native]
+    oss: https://github.com/evman/silage
+    official: false
+    beta: true
+    downloads:
+      - type: github
+        owner: evman
+        repo: silage
+
+  - name: "Bale"
+    targets: [Xbox]
+    types: [Native]
+    oss: https://github.com/Zorro92/bale-for-silo
+    official: false
+    beta: true
+    downloads:
+      - type: github
+        owner: Zorro92
+        repo: bale-for-silo
+
+  - name: "silo-webos for LG TVs"
+    targets: [WebOS]
+    types: [Native]
+    oss: https://github.com/clacksy/silo-webos
+    official: false
+    beta: true
+    downloads:
+      - type: shield
+        icon: LG
+        url: https://github.com/clacksy/silo-webos
+
+  - name: "a Kodi build "
+    targets: [Kodi]
+    types: [Native]
+    oss: https://github.com/Pedrod86/Relay-Media-silo-build
+    official: false
+    beta: true
+    downloads:
+      - type: github
+        owner: Pedrod86
+        repo: Relay-Media-silo-build
+
+  - name: "Swiftfin"
+    targets: [iOS, AppleTV]
+    types: [Compatible]
+    oss: https://github.com/jellyfin/swiftfin
+    official: false
+    beta: true
+    downloads:
+      - type: app-store
+        id: "1604098728"
+
+  - name: "Jellyfin Vue"
+    targets: [Browser]
+    types: [Compatible]
+    oss: https://github.com/jellyfin/jellyfin-vue
+    official: false
+    beta: true
+    downloads:
+      - type: github
+        owner: jellyfin
+        repo: jellyfin-vue
+        url: https://github.com/jellyfin/jellyfin-vue/actions/workflows/release.yml
+      - type: demo
+        url: https://jf-vue.pages.dev/
+
+  - name: "Pelagica"
+    targets: [Browser, Windows, Linux, macOS, AppleTV, Tizen, WebOS]
+    types: [Compatible]
+    oss: https://github.com/PelagicaApp/pelagica
+    official: false
+    website: https://pelagica.app/
+    beta: false
+    downloads:
+      - type: docker
+        user: kartoffelchipss
+        repo: pelagica
+      - type: app-store
+        id: "6811079730"
+      - type: github
+        owner: PelagicaApp
+        repo: pelagica
+      - type: demo
+        url: https://demo.pelagica.app/
+
+  - name: "JellyCon"
+    targets: [Kodi]
+    types: [Compatible]
+    oss: https://github.com/jellyfin/jellycon
+    official: false
+    downloads:
+      - type: github
+        owner: jellyfin
+        repo: jellycon
+
+  - name: "Jellyfin for Kodi"
+    targets: [Kodi]
+    types: [Compatible]
+    oss: https://github.com/jellyfin/jellyfin-kodi
+    downloads:
+      - type: github
+        owner: jellyfin
+        repo: jellyfin-kodi
+
+  - name: "Jellyfin for Android"
+    targets: [Android]
+    types: [Compatible]
+    oss: https://github.com/jellyfin/jellyfin-android
+    official: false
+    downloads:
+      - type: shield
+        icon: F-Droid
+        url: https://f-droid.org/en/packages/org.jellyfin.mobile/
+      - type: shield
+        icon: Amazon
+        url: https://www.amazon.com/gp/aw/d/B081RFTTQ9
+      - type: google-play
+        id: org.jellyfin.mobile
+
+  - name: "Jellyfin Mobile for iOS"
+    targets: [iOS]
+    types: [Compatible]
+    oss: https://github.com/jellyfin/jellyfin-expo
+    official: false
+    downloads:
+      - type: app-store
+        id: "1480192618"
+
+  - name: "Jellyfin for Android TV"
+    targets: [AndroidTV]
+    types: [Compatible]
+    oss: https://github.com/jellyfin/jellyfin-androidtv
+    official: false
+    downloads:
+      - type: shield
+        icon: Amazon
+        url: https://www.amazon.com/gp/aw/d/B07TX7Z725
+      - type: google-play
+        id: org.jellyfin.androidtv
+
+  - name: "Jellyfin for Roku"
+    targets: [Roku]
+    types: [Compatible]
+    oss: https://github.com/jellyfin/jellyfin-roku
+    official: false
+    downloads:
+      - type: shield
+        icon: Roku
+        url: https://channelstore.roku.com/details/592369/jellyfin
+
+  - name: "Jellyfin for WebOS"
+    targets: [WebOS]
+    types: [Compatible]
+    oss: https://github.com/jellyfin/jellyfin-webos
+    official: false
+    downloads:
+      - type: shield
+        icon: LG
+        url: https://us.lgappstv.com/main/tvapp/detail?appId=1030579
+
+  - name: "Sailfin"
+    targets: [SailfishOS]
+    types: [Compatible]
+    oss: https://github.com/heartfin/harbour-sailfin
+    downloads:
+      - type: shield
+        label: OpenRepos
+        url: https://openrepos.net/content/ahappyhuman/sailfin
+
+  - name: "Infuse"
+    targets: [iOS, AppleTV, macOS]
+    types: [Compatible]
+    website: https://firecore.com/infuse
+    price:
+      free: true
+      paid: true
+    downloads:
+      - type: app-store
+        id: "1136220934"
+
+  - name: "Neptune"
+    targets: [AppleTV]
+    types: [Compatible]
+    website: https://neptuneplayer.com/
+    price:
+      free: true
+      paid: true
+    downloads:
+      - type: app-store
+        id: "6756797773"
+
+  - name: "VidHub"
+    targets: [Android, AndroidTV, iOS, AppleTV, macOS]
+    types: [Compatible]
+    website: https://okaapps.com/product/1659622164
+    price:
+      free: true
+      paid: true
+    downloads:
+      - type: google-play
+        id: com.oumi.utility.media.hub
+      - type: app-store
+        id: "1659622164"
+
+  - name: "MrMC"
+    targets: [AppleTV]
+    types: [Compatible]
+    oss: https://github.com/MrMC/mrmc
+    price:
+      free: true
+      paid: true
+    downloads:
+      - type: app-store
+        id: "1059536415"
+      - type: google-play
+        id: tv.mrmc.mrmc
+
+  - name: "Delfin"
+    targets: [Linux]
+    types: [Compatible]
+    oss: https://codeberg.org/avery42/delfin
+    official: false
+    beta: true
+    downloads:
+      - type: flathub
+        package: cafe.avery.Delfin
+
+  - name: "Jellyfin MPV Shim"
+    targets: [Windows, Linux, macOS]
+    types: [Compatible]
+    oss: https://github.com/jellyfin/jellyfin-mpv-shim
+    official: false
+    downloads:
+      - type: github
+        owner: jellyfin
+        repo: jellyfin-mpv-shim
+      - type: flathub
+        package: com.github.iwalton3.jellyfin-mpv-shim
+
+  - name: "Blink"
+    targets: [Windows, Linux, macOS]
+    types: [Compatible]
+    oss: https://github.com/prayag17/Blink
+    official: false
+    beta: true
+    downloads:
+      - type: github
+        owner: prayag17
+        repo: Blink
+
+  - name: "AFinity"
+    targets: [Android]
+    types: [Compatible]
+    oss: https://github.com/MakD/AFinity
+    official: false
+    beta: true
+    website: https://afinity.vercel.app
+    downloads:
+      - type: github
+        owner: MakD
+        repo: AFinity
+
+  - name: "JellyBook"
+    targets: [Android, iOS]
+    types: [Reader, Compatible]
+    oss: https://github.com/JellyBookOrg/JellyBook
+    official: false
+    beta: false
+    downloads:
+      - type: github
+        owner: JellyBookOrg
+        repo: JellyBook
+      - type: shield
+        label: Izzysoft
+        url: "https://apt.izzysoft.de/fdroid/index/apk/com.KaraWilson.JellyBook/"
+      - type: shield
+        icon: App Store
+        label: TestFlight
+        url: "https://testflight.apple.com/join/lEXKY4Dl"
+
+  - name: "Jellyflix"
+    targets: [Android, iOS, Windows, Linux, macOS, Browser]
+    types: [Compatible]
+    official: false
+    beta: false
+    oss: https://github.com/jellyflix-app/jellyflix
+    price:
+      free: true
+    downloads:
+      - type: demo
+        url: https://jellyflix.kiejon.com/
+      - type: app-store
+        id: "6476043683"
+      - type: github
+        owner: jellyflix-app
+        repo: jellyflix
+
+  - name: "Switchfin"
+    targets: [NintendoSwitch, Xbox, macOS, Linux, Windows, PlayStation]
+    types: [Compatible]
+    official: false
+    beta: true
+    oss: https://github.com/dragonflylee/switchfin
+    price:
+      free: true
+    downloads:
+      - type: github
+        owner: dragonflylee
+        repo: switchfin
+
+  - name: "tsukimi"
+    targets: [Linux]
+    types: [Compatible]
+    oss: https://github.com/tsukinaha/tsukimi
+    official: false
+    beta: true
+    price:
+      free: true
+    downloads:
+      - type: github
+        owner: tsukinaha
+        repo: tsukimi
+
+  - name: "Fladder"
+    targets: [Android, AndroidTV, iOS, macOS, Windows, Linux, Browser]
+    types: [Compatible]
+    oss: https://github.com/DonutWare/Fladder
+    official: false
+    beta: false
+    price:
+      free: true
+    downloads:
+      - type: github
+        owner: DonutWare
+        repo: Fladder
+      - type: google-play
+        id: nl.jknaapen.fladder
+      - type: flathub
+        package: nl.jknaapen.fladder
+
+  - name: AfuseKt
+    targets: [Android]
+    types: [Compatible]
+    official: false
+    beta: false
+    website: "https://github.com/AttemptD/AfuseKt-release"
+    price:
+      free: true
+      paid: true
+    downloads:
+      - type: github
+        owner: AttemptD
+        repo: AfuseKt-release
+
+  - name: AfuseKt TV
+    targets: [AndroidTV]
+    types: [Compatible]
+    official: false
+    beta: false
+    website: "https://github.com/AttemptD/AfuseKtV-release"
+    price:
+      free: false
+      paid: true
+    downloads:
+      - type: github
+        owner: AttemptD
+        repo: AfuseKtV-release
+
+  - name: FluentFin
+    targets: [Windows]
+    types: [Compatible]
+    oss: https://github.com/insomniachi/FluentFin
+    official: false
+    beta: true
+    downloads:
+      - type: github
+        owner: insomniachi
+        repo: FluentFin
+
+  - name: FinVideo
+    targets: [HarmonyOS]
+    types: [Compatible]
+    oss: https://github.com/OHPG/FinVideo
+    price:
+      free: true
+    downloads:
+      - type: github
+        owner: OHPG
+        repo: FinVideo
+      - type: shield
+        icon: AppGallery
+        url: https://appgallery.huawei.com/app/detail?id=org.ohpg.fin.video
+
+  - name: "HamHub"
+    targets: [iOS, AppleTV, macOS]
+    types: [Compatible]
+    website: https://www.hamhub.app/
+    price:
+      free: true
+    downloads:
+      - type: app-store
+        id: "6458691598"
+
+  - name: "Filebar"
+    targets: [iOS, AppleTV]
+    types: [Compatible]
+    website: https://fileball.app/
+    price:
+      free: true
+      paid: true
+    downloads:
+      - type: app-store
+        id: "1558391784"
+
+  - name: Ghosten-Player
+    targets: [Android, AndroidTV]
+    types: [Compatible]
+    oss: https://github.com/GhostenEditor/Ghosten-Player
+    official: false
+    downloads:
+      - type: github
+        owner: GhostenEditor
+        repo: Ghosten-Player
+
+  - name: "SenPlayer"
+    targets: [macOS, iOS, AppleTV]
+    types: [Compatible]
+    website: https://apps.apple.com/app/id6443975850
+    price:
+      free: true
+      paid: true
+    downloads:
+      - type: app-store
+        id: "6443975850"
+
+  - name: iPlay
+    targets: [iOS, Windows, macOS]
+    types: [Compatible]
+    oss: https://github.com/saltpi/iPlay
+    official: false
+    downloads:
+      - type: github
+        owner: saltpi
+        repo: iPlay
+      - type: app-store
+        id: "6480576133"
+      - type: shield
+        icon: Amazon
+        url: https://www.amazon.com/gp/product/B0DB2KL58G
+      - type: shield
+        label: Microsoft Store
+        url: https://apps.microsoft.com/detail/9NBZ2BXD4WFZ
+
+  - name: Jellyfin for Tizen
+    targets: [Tizen]
+    types: [Compatible]
+    oss: https://github.com/jellyfin/jellyfin-tizen
+    official: false
+    downloads:
+      - type: text
+        text: Build It Yourself
+        url: https://github.com/jellyfin/jellyfin-tizen
+
+  - name: "Phyn"
+    targets: [macOS, iOS, Android]
+    types: [Compatible]
+    website: https://phyn.app
+    official: false
+    beta: false
+    price:
+      free: true
+      paid: true
+    downloads:
+      - type: google-play
+        id: com.appsynergyts.phyn
+      - type: app-store
+        id: "6457674815"
+
+  - name: "Hills"
+    targets: [Windows, Android]
+    types: [Compatible]
+    website: https://play.google.com/store/apps/details?id=com.mountains.hills
+    official: false
+    beta: false
+    price:
+      free: true
+      paid: true
+    downloads:
+      - type: google-play
+        id: com.mountains.hills
+      - type: shield
+        label: Microsoft Store
+        url: https://apps.microsoft.com/detail/9NXNZFRLLWZX
+
+  - name: "Rodel Player"
+    targets: [Windows]
+    types: [Compatible]
+    website: https://apps.microsoft.com/detail/9nb0h051m4v4
+    official: false
+    beta: false
+    price:
+      free: true
+    downloads:
+      - type: shield
+        label: Microsoft Store
+        url: https://apps.microsoft.com/detail/9nb0h051m4v4
+
+  - name: "JellyRock"
+    targets: [Roku]
+    types: [Compatible]
+    oss: https://github.com/cewert/jellyrock
+    price:
+      free: true
+      paid: false
+    beta: false
+    official: false
+    downloads:
+      - type: shield
+        icon: Roku
+        url: https://channelstore.roku.com/details/232f9e82db11ce628e3fe7e01382a330:a85d6e9e520567806e8dae1c0cabadd5/jellyrock
+      - type: github
+        owner: cewert
+        repo: jellyrock
+
+  - name: Void
+    targets: [Android, AndroidTV]
+    types: [Compatible]
+    oss: https://github.com/hritwikjohri/Void-for-jellyfin
+    price:
+      free: true
+      paid: false
+    beta: true
+    official: false
+    downloads:
+      - type: github
+        owner: hritwikjohri
+        repo: Void-for-jellyfin
+      - type: github
+        owner: hritwikjohri
+        repo: VoidTV-for-jellyfin
+
+  - name: "Aperture"
+    targets: [Browser]
+    types: [Compatible]
+    oss: https://github.com/akhilmulpurii/aperture
+    official: false
+    beta: true
+    price:
+      free: true
+    downloads:
+      - type: github
+        owner: akhilmulpurii
+        repo: aperture
+
+  - name: "Mediora"
+    targets: [AppleTV]
+    types: [Compatible]
+    website: https://github.com/ghobs91/mediora
+    oss: https://github.com/ghobs91/mediora
+    price:
+      free: true
+      paid: false
+    downloads:
+      - type: app-store
+        id: "6757345487"
+
+  - name: Yamby
+    targets: [Android, AndroidTV]
+    types: [Compatible]
+    price:
+      free: true
+      paid: true
+    downloads:
+      - type: google-play
+        id: com.hush.yamby
+
+  - name: JellySee
+    targets: [AppleTV]
+    types: [Compatible]
+    official: false
+    beta: false
+    price:
+      free: false
+      paid: true
+    downloads:
+      - type: app-store
+        id: "6748783768"
+
+  - name: "Breezyfin"
+    targets: [WebOS]
+    types: [Compatible]
+    oss: https://github.com/botagas/Breezyfin
+    official: false
+    beta: true
+    price:
+      free: true
+      paid: false
+    downloads:
+      - type: github
+        owner: botagas
+        repo: Breezyfin
+
+  - name: JellyCine
+    targets: [Android]
+    types: [Compatible]
+    oss: https://github.com/sureshfizzy/JellyCine
+    downloads:
+      - type: github
+        owner: sureshfizzy
+        repo: JellyCine
+
+  - name: JellyTV
+    targets: [iOS]
+    types: [Compatible]
+    website: https://jellytv.app/en
+    price:
+      free: false
+      paid: true
+    downloads:
+      - type: app-store
+        id: "6752357290"
+
+  - name: Elefin
+    targets: [AndroidTV]
+    types: [Compatible]
+    oss: https://github.com/flex36ty/elefin
+    downloads:
+      - type: github
+        owner: flex36ty
+        repo: elefin
+
+  - name: Litefin
+    targets: [Tizen, WebOS]
+    types: [Compatible]
+    oss: https://github.com/MoazSalem/litefin
+    official: false
+    price:
+      free: true
+      paid: false
+    downloads:
+      - type: github
+        owner: MoazSalem
+        repo: litefin
+
+  - name: "Jellyfin Web"
+    targets: [Browser]
+    types: [Compatible]
+    oss: https://github.com/jellyfin/jellyfin-web
+    price:
+      free: true
+    downloads:
+      - type: github
+        owner: jellyfin
+        repo: jellyfin-web
+
+  - name: "Jellium Desktop"
+    targets: [Windows, Linux, macOS]
+    types: [Compatible]
+    oss: https://github.com/andrewrabert/jellium-desktop
+    official: false
+    beta: true
+    downloads:
+      - type: github
+        owner: andrewrabert
+        repo: jellium-desktop
+
+  - name: "LiveFin"
+    targets: [iOS, macOS]
+    types: [Compatible]
+    website: https://livefin.github.io/web/
+    oss: https://github.com/LiveFin/LiveFin
+    price:
+      free: true
+      paid: false
+    downloads:
+      - type: app-store
+        id: "6748318433"
+
+  - name: "Kofin PVR for Jellyfin"
+    targets: [Kodi]
+    types: [Compatible]
+    oss: https://github.com/kontell/pvr.kofin
+    official: false
+    price:
+      free: true
+      paid: false
+    downloads:
+      - type: github
+        owner: kontell
+        repo: pvr.kofin
+
+  - name: "Mellow"
+    targets: [Android]
+    types: [Compatible]
+    oss: https://github.com/Malinskiy/mellow
+    official: false
+    price:
+      free: true
+      paid: false
+    downloads:
+      - type: github
+        owner: Malinskiy
+        repo: mellow
+
+  - name: "Spectati"
+    targets: [iOS, AppleTV, macOS]
+    types: [Compatible]
+    website: https://spectati.com
+    price:
+      free: true
+      paid: true
+    downloads:
+      - type: app-store
+        id: "6767241047"
+
+  - name: "Jellyfin for Xbox"
+    targets: [Xbox]
+    types: [Compatible]
+    oss: https://github.com/jellyfin/jellyfin-xbox
+    official: false
+    beta: true
+    downloads:
+      - type: github
+        owner: jellyfin
+        repo: jellyfin-xbox
+
+  - name: "Movian Jellyfin"
+    targets: [PlayStation]
+    types: [Compatible]
+    oss: https://github.com/LouisMarotta/m7-jellyfin
+    official: false
+    beta: true
+    downloads:
+      - type: github
+        owner: LouisMarotta
+        repo: m7-jellyfin
+
+  - name: "Strimr"
+    targets: [iOS, macOS, AppleTV]
+    types: [Compatible]
+    oss: https://github.com/wunax/strimr
+    official: false
+    beta: false
+    price:
+      free: true
+      paid: false
+    downloads:
+      - type: app-store
+        id: "6757491271"
+
+  - name: "ReelFin"
+    targets: [iOS, AppleTV]
+    types: [Compatible]
+    website: https://flovflo.github.io/reelfin-site/
+    price:
+      free: true
+      paid: false
+    downloads:
+      - type: app-store
+        id: "6762079357"
+
+  - name: "Sanctumd"
+    targets: [Android, AndroidTV]
+    types: [Compatible]
+    oss: https://github.com/Phioster/sanctum_daemon
+    website: https://sanctumd.dpdns.org
+    official: false
+    beta: false
+    price:
+      free: true
+      paid: false
+    downloads:
+      - type: github
+        owner: Phioster
+        repo: sanctum_daemon
+
