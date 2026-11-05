@@ -1,0 +1,14 @@
+{
+  "source": "https://raw.githubusercontent.com/neilsb/silo-plugin-yamtrack/main/manifest.json",
+  "plugins": [
+    {
+      "id": "community.yambridge",
+      "name": "Yambridge",
+      "summary": "Send new completed watches from Silo to Yamtrack.",
+      "repo_url": "https://github.com/neilsb/silo-plugin-yamtrack",
+      "capabilities": [
+        "watch_sync_provider.v1"
+      ]
+    }
+  ]
+}

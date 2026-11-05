@@ -1,0 +1,14 @@
+{
+  "source": "https://raw.githubusercontent.com/outragedpeanut/silo-tracearr/main/manifest.json",
+  "plugins": [
+    {
+      "id": "community.tracearr-connector",
+      "name": "Tracearr Connector",
+      "summary": "Lets Tracearr monitor streams, users and sharing on this Silo server.",
+      "repo_url": "https://github.com/outragedpeanut/silo-tracearr",
+      "capabilities": [
+        "http_routes.v1"
+      ]
+    }
+  ]
+}

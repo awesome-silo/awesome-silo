@@ -1,0 +1,15 @@
+{
+  "source": "https://raw.githubusercontent.com/olivertgwalton/silo-plugins-request-riven/main/manifest.json",
+  "plugins": [
+    {
+      "id": "silo.requests.riven",
+      "name": "Riven Requests",
+      "summary": "Submit Silo movie and series requests directly to a riven-rs instance.",
+      "repo_url": "https://github.com/olivertgwalton/silo-plugins-request-riven",
+      "capabilities": [
+        "request_router.v1",
+        "scan_source.v1"
+      ]
+    }
+  ]
+}

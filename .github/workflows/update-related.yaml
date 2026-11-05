@@ -1,0 +1,64 @@
+name: Update related projects
+
+on:
+  pull_request:
+    paths:
+      - "README.md"
+      - "related.txt"
+      - "scripts/update_related.py"
+      - "scripts/test_update_related.py"
+      - ".github/workflows/update-related.yaml"
+  push:
+    branches: [main]
+    paths:
+      - "related.txt"
+      - "scripts/update_related.py"
+      - ".github/workflows/update-related.yaml"
+  schedule:
+    - cron: "23 7 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5
+
+      - name: Test related-project updater
+        run: python3 -m unittest discover -s scripts -p 'test_*.py'
+
+      - name: Verify generated Related section
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 scripts/update_related.py --check
+
+  regenerate:
+    if: github.event_name == 'push' || ((github.event_name == 'workflow_dispatch' || github.event_name == 'schedule') && github.ref == 'refs/heads/main')
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5
+
+      - name: Refresh related-project descriptions
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 scripts/update_related.py
+
+      - name: Open updated related-project list PR
+        uses: peter-evans/create-pull-request@22a9089034f40e5a961c8808d113e2c98fb63676 # v7
+        with:
+          add-paths: README.md
+          branch: automation/update-related
+          delete-branch: true
+          commit-message: |
+            docs: refresh related projects
+
+            Co-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>
+          title: "docs: refresh related projects"
+          body: "Refresh README.md descriptions from the GitHub repositories listed in related.txt."

@@ -1,0 +1,14 @@
+{
+  "source": "https://raw.githubusercontent.com/neilmc78/silo-plugin-metadata-omdb/main/manifest.json",
+  "plugins": [
+    {
+      "id": "neilmc78.metadata.omdb",
+      "name": "OMDb Metadata",
+      "summary": "Matches films TMDB does not list, such as fan films and fan edits, by their IMDb ID.",
+      "repo_url": "https://github.com/neilmc78/silo-plugin-metadata-omdb",
+      "capabilities": [
+        "metadata_provider.v1"
+      ]
+    }
+  ]
+}

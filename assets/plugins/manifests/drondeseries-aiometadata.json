@@ -1,0 +1,14 @@
+{
+  "source": "https://raw.githubusercontent.com/drondeseries/silo-plugin-aiometadata/main/manifest.json",
+  "plugins": [
+    {
+      "id": "aiometadata",
+      "name": "AIOMetadata Provider",
+      "summary": "Use AIOMetadata as a standalone Silo metadata provider.",
+      "repo_url": "https://github.com/drondeseries/silo-plugin-aiometadata",
+      "capabilities": [
+        "metadata_provider.v1"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "source": "https://raw.githubusercontent.com/BEisem/silo-plex-artwork-sync/main/manifest.json",
+  "plugins": [
+    {
+      "id": "community.kometa-sync",
+      "name": "Plex Artwork Sync",
+      "summary": "Keeps Silo's movie and series posters and collections matching Plex, including Kometa's overlays.",
+      "repo_url": "https://github.com/BEisem/silo-plex-artwork-sync",
+      "capabilities": [
+        "scheduled_task.v1",
+        "http_routes.v1"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,153 @@
+{
+  "source": "https://raw.githubusercontent.com/Silo-Server/silo-plugins/main/manifest.json",
+  "plugins": [
+    {
+      "id": "silo.audiobook-metadata",
+      "name": "Audiobook Metadata",
+      "summary": "Fetch audiobook metadata and artwork from multiple book and audiobook sources.",
+      "repo_url": "https://github.com/Silo-Server/silo-plugin-metadata-audiobook",
+      "capabilities": [
+        "metadata_provider.v1"
+      ]
+    },
+    {
+      "id": "silo.auth.ldap",
+      "name": "LDAP Sign-in",
+      "summary": "Let people sign in to Silo with their LDAP or Active Directory password.",
+      "repo_url": "https://github.com/Silo-Server/silo-plugin-auth-ldap",
+      "capabilities": [
+        "auth_provider.v1",
+        "http_routes.v1"
+      ]
+    },
+    {
+      "id": "silo.auth.oidc",
+      "name": "OpenID Connect Sign-in",
+      "summary": "Sign in to Silo with an OpenID Connect provider such as Authelia, authentik, Pocket ID, Keycloak, Kanidm, Zitadel or Tinyauth.",
+      "repo_url": "https://github.com/Silo-Server/silo-plugin-auth-oidc",
+      "capabilities": [
+        "auth_provider.v1",
+        "http_routes.v1"
+      ]
+    },
+    {
+      "id": "silo.autoscan.arr",
+      "name": "Sonarr \u0026 Radarr Autoscan",
+      "summary": "Detect imports and renames in Sonarr or Radarr and queue targeted Silo scans.",
+      "repo_url": "https://github.com/Silo-Server/silo-plugin-autoscan-arr",
+      "capabilities": [
+        "scan_source.v1"
+      ]
+    },
+    {
+      "id": "silo.ebook-metadata",
+      "name": "Ebook Metadata",
+      "summary": "Enrich ebook libraries with book metadata from public and credentialed sources.",
+      "repo_url": "https://github.com/Silo-Server/silo-plugin-metadata-ebook",
+      "capabilities": [
+        "metadata_provider.v1"
+      ]
+    },
+    {
+      "id": "silo.manga-metadata",
+      "name": "Manga Metadata",
+      "summary": "Match manga and add rich metadata, covers, contributors, and publication details.",
+      "repo_url": "https://github.com/Silo-Server/silo-plugin-metadata-manga",
+      "capabilities": [
+        "metadata_provider.v1"
+      ]
+    },
+    {
+      "id": "silo.mdblist",
+      "name": "MDBList Ratings",
+      "summary": "IMDb, TMDB and Rotten Tomatoes ratings, MDBList's own score, age ratings, and missing basics from MDBList.",
+      "repo_url": "https://github.com/Silo-Server/silo-plugin-metadata-mdblist",
+      "capabilities": [
+        "metadata_provider.v1"
+      ]
+    },
+    {
+      "id": "silo.requests.arr",
+      "name": "Sonarr / Radarr",
+      "summary": "Fulfills movie/series requests against multi-instance Sonarr/Radarr.",
+      "repo_url": "https://github.com/Silo-Server/silo-plugins-requests-arr",
+      "capabilities": [
+        "request_router.v1"
+      ]
+    },
+    {
+      "id": "silo.requests.seerr",
+      "name": "Seerr",
+      "summary": "Fulfill content requests through a Seerr (Overseerr/Jellyseerr) instance.",
+      "repo_url": "https://github.com/Silo-Server/silo-plugins-requests-seerr",
+      "capabilities": [
+        "request_router.v1"
+      ]
+    },
+    {
+      "id": "silo.sportarr",
+      "name": "Sportarr Metadata",
+      "summary": "Build sports libraries from Sportarr league, season, and event metadata.",
+      "repo_url": "https://github.com/Silo-Server/silo-plugin-metadata-sportarr",
+      "capabilities": [
+        "metadata_provider.v1"
+      ]
+    },
+    {
+      "id": "silo.theintrodb",
+      "name": "TheIntroDB Markers",
+      "summary": "Fetch and submit intro, credits, recap, and preview markers through TheIntroDB.",
+      "repo_url": "https://github.com/Silo-Server/silo-plugin-markers-theintrodb",
+      "capabilities": [
+        "marker_provider.v1"
+      ]
+    },
+    {
+      "id": "silo.tmdb",
+      "name": "TMDB Metadata",
+      "summary": "Fetch movie and TV metadata and artwork from The Movie Database.",
+      "repo_url": "https://github.com/Silo-Server/silo-plugin-metadata-tmdb",
+      "capabilities": [
+        "metadata_provider.v1",
+        "image_resolver.v1"
+      ]
+    },
+    {
+      "id": "silo.tvdb",
+      "name": "TVDB Metadata",
+      "summary": "Fetch series, season, episode, and artwork metadata from TheTVDB.",
+      "repo_url": "https://github.com/Silo-Server/silo-plugin-metadata-tvdb",
+      "capabilities": [
+        "metadata_provider.v1",
+        "image_resolver.v1"
+      ]
+    },
+    {
+      "id": "silo.watchprovider.floppy",
+      "name": "Floppy Watch Provider",
+      "summary": "Sync Silo watch activity with a self-hosted Floppy instance.",
+      "repo_url": "https://github.com/Silo-Server/silo-plugin-watchprovider-floppy",
+      "capabilities": [
+        "watch_sync_provider.v1"
+      ]
+    },
+    {
+      "id": "silo.watchprovider.mdblist",
+      "name": "MDBList Watch Provider",
+      "summary": "Sync Silo watch history, watchlists, favorites, and ratings with MDBList.",
+      "repo_url": "https://github.com/Silo-Server/silo-plugin-watchprovider-mdblist",
+      "capabilities": [
+        "watch_sync_provider.v1"
+      ]
+    },
+    {
+      "id": "silo.watchprovider.simkl",
+      "name": "Simkl Watch Provider",
+      "summary": "Sync Silo watch history, plan-to-watch list, dropped shows, and ratings with Simkl.",
+      "repo_url": "https://github.com/Silo-Server/silo-plugin-watchprovider-simkl",
+      "capabilities": [
+        "watch_sync_provider.v1"
+      ]
+    }
+  ]
+}

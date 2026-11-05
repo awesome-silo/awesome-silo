@@ -1,0 +1,14 @@
+{
+  "source": "https://raw.githubusercontent.com/PunchPlay/silo-plugin-punchplay/main/manifest.json",
+  "plugins": [
+    {
+      "id": "tv.punchplay.watchprovider",
+      "name": "PunchPlay Watch Provider",
+      "summary": "Sync Silo watch history, ratings, watchlist, favourites and dropped shows with PunchPlay, with live scrobbling.",
+      "repo_url": "https://github.com/PunchPlay/silo-plugin-punchplay",
+      "capabilities": [
+        "watch_sync_provider.v1"
+      ]
+    }
+  ]
+}

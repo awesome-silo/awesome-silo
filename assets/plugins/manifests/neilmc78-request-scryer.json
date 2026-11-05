@@ -1,0 +1,14 @@
+{
+  "source": "https://raw.githubusercontent.com/neilmc78/silo-plugin-request-scryer/main/manifest.json",
+  "plugins": [
+    {
+      "id": "neilmc78.request.scryer",
+      "name": "Scryer Requests",
+      "summary": "Sends approved movie and series requests to Scryer, which searches for them and downloads them.",
+      "repo_url": "https://github.com/neilmc78/silo-plugin-request-scryer",
+      "capabilities": [
+        "request_router.v1"
+      ]
+    }
+  ]
+}

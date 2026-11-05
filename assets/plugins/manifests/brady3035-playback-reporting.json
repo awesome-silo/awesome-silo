@@ -1,0 +1,14 @@
+{
+  "source": "https://raw.githubusercontent.com/Brady3035/silo-plugin-playback-reporting/main/manifest.json",
+  "plugins": [
+    {
+      "id": "community.playback-reporting",
+      "name": "Playback Reporting",
+      "summary": "Reports on what your users watch: activity over time, per-user sessions and stream types, and a breakdown of movies, shows and audiobooks by plays, time or smart plays.",
+      "repo_url": "https://github.com/Brady3035/silo-plugin-playback-reporting",
+      "capabilities": [
+        "http_routes.v1"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "source": "https://raw.githubusercontent.com/bulderi/silo-plugin-letterboxd/main/manifest.json",
+  "plugins": [
+    {
+      "id": "bulderi.letterboxd",
+      "name": "Letterboxd Watch Provider",
+      "summary": "Sync a Silo profile's watchlist with a Letterboxd watchlist, movies only.",
+      "repo_url": "https://github.com/bulderi/silo-plugin-letterboxd",
+      "capabilities": [
+        "watch_sync_provider.v1"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "source": "https://raw.githubusercontent.com/zerodayz1/silo-plugin-omdb/main/manifest.json",
+  "plugins": [
+    {
+      "id": "silo.omdb",
+      "name": "OMDb",
+      "summary": "Enriches media items with IMDb ratings and Rotten Tomatoes critic scores via the OMDb API.",
+      "repo_url": "https://github.com/zerodayz1/silo-plugin-omdb",
+      "capabilities": [
+        "metadata_provider.v1"
+      ]
+    }
+  ]
+}

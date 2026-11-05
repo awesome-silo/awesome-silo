@@ -1,0 +1,42 @@
+{
+  "source": "https://raw.githubusercontent.com/Silo-Community/silo-plugins/main/manifest.json",
+  "plugins": [
+    {
+      "id": "ironicbadger.network-access.tailscale",
+      "name": "Tailscale",
+      "summary": "Reach Silo through your tailnet without opening public ports.",
+      "repo_url": "https://github.com/Silo-Community/silo-plugin-tailscale",
+      "capabilities": [
+        "network_access_provider.v1",
+        "auth_provider.v1"
+      ]
+    },
+    {
+      "id": "silo.requests.arr",
+      "name": "Sonarr \u0026 Radarr Requests",
+      "summary": "Route movie and series requests to one or more Sonarr and Radarr instances.",
+      "repo_url": "https://github.com/Silo-Community/silo-plugins-requests-arr",
+      "capabilities": [
+        "request_router.v1"
+      ]
+    },
+    {
+      "id": "silo.requests.seerr",
+      "name": "Seerr Requests",
+      "summary": "Submit Silo movie and series requests through a Seerr-compatible server.",
+      "repo_url": "https://github.com/Silo-Community/silo-plugins-requests-seerr",
+      "capabilities": [
+        "request_router.v1"
+      ]
+    },
+    {
+      "id": "silo.watchprovider.scrob",
+      "name": "Scrob Watch Provider",
+      "summary": "Sync Silo watch activity with a self-hosted Scrob instance.",
+      "repo_url": "https://github.com/Silo-Community/silo-plugin-watchprovider-scrob",
+      "capabilities": [
+        "watch_sync_provider.v1"
+      ]
+    }
+  ]
+}

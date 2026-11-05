@@ -1,0 +1,67 @@
+{
+  "source": "https://raw.githubusercontent.com/theramindex/silo-plugins/main/manifest.json",
+  "plugins": [
+    {
+      "id": "silo.ramindex.app-links",
+      "name": "App Links",
+      "summary": "Configurable external app launcher with fullscreen iframe shells and an admin app link manager.",
+      "repo_url": "https://github.com/theramindex/silo-plugin-app-links",
+      "capabilities": [
+        "http_routes.v1"
+      ]
+    },
+    {
+      "id": "silo.ramindex.dispatcharr",
+      "name": "Dispatcharr for Silo",
+      "summary": "Live TV, guide, sports, and DVR plugin for Silo, backed by Dispatcharr.",
+      "repo_url": "https://github.com/theramindex/silo-plugin-dispatcharr",
+      "capabilities": [
+        "scheduled_task.v1",
+        "scheduled_task.v1",
+        "scheduled_task.v1",
+        "http_routes.v1"
+      ]
+    },
+    {
+      "id": "silo.ramindex.hdhomerun",
+      "name": "HDHomeRun for Silo",
+      "summary": "Live TV from physical and emulated HDHomeRun tuners.",
+      "repo_url": "https://github.com/theramindex/silo-plugin-hdhomerun",
+      "capabilities": [
+        "http_routes.v1",
+        "scheduled_task.v1"
+      ]
+    },
+    {
+      "id": "silo.ramindex.local-metadata",
+      "name": "Local Artwork",
+      "summary": "Adds local posters, backdrops, logos, and stills alongside Silo's built-in NFO metadata.",
+      "repo_url": "https://github.com/theramindex/silo-plugin-local-artwork",
+      "capabilities": [
+        "metadata_provider.v1",
+        "image_resolver.v1"
+      ]
+    },
+    {
+      "id": "silo.ramindex.trakt",
+      "name": "Trakt",
+      "summary": "Two-way watch history, resume progress, favorites, watchlist, movie and show ratings, and dropped shows, plus live scrobbling, for Trakt accounts.",
+      "repo_url": "https://github.com/theramindex/silo-plugin-watchprovider-trakt",
+      "capabilities": [
+        "watch_sync_provider.v1"
+      ]
+    },
+    {
+      "id": "silo.ramindex.xtream",
+      "name": "XC for Silo",
+      "summary": "Xtream Codes-first Live TV app with guide, VOD, series, provider Catch-up, and multiview.",
+      "repo_url": "https://github.com/theramindex/silo-plugin-xtream-library",
+      "capabilities": [
+        "scheduled_task.v1",
+        "scheduled_task.v1",
+        "scheduled_task.v1",
+        "http_routes.v1"
+      ]
+    }
+  ]
+}

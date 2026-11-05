@@ -1,0 +1,115 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://github.com/awesome-silo/awesome-silo/blob/main/assets/plugins/schema.json",
+  "title": "awesome-silo plugins",
+  "description": "plugins.yaml (categories and plugins) or a file in plugins.d (owners and plugins).",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "owners": {
+      "description": "plugins.d only: GitHub handles of the people who maintain this file.",
+      "type": "array",
+      "minItems": 1,
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "categories": {
+      "description": "plugins.yaml only: the sections PLUGINS.md is grouped by, in display order.",
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/definitions/category" }
+    },
+    "manifests": {
+      "description": "Remote plugin manifests. Manifests in plugins.yaml come first, in order, then those in plugins.d files; a plugin ID provided earlier is skipped later. In plugins.d only tier \"other\" is allowed.",
+      "type": "array",
+      "items": { "$ref": "#/definitions/manifest" }
+    },
+    "capability_categories": {
+      "description": "plugins.yaml only: maps a plugin capability type (for example metadata_provider.v1) to a category key. A manifest plugin is placed using its first mapped capability.",
+      "type": "object",
+      "additionalProperties": { "type": "string", "minLength": 1 }
+    },
+    "plugins": {
+      "type": "array",
+      "items": { "$ref": "#/definitions/plugin" }
+    }
+  },
+  "anyOf": [
+    {
+      "required": ["owners"],
+      "anyOf": [{ "required": ["plugins"] }, { "required": ["manifests"] }],
+      "not": { "anyOf": [{ "required": ["categories"] }, { "required": ["capability_categories"] }] }
+    },
+    { "required": ["categories"], "not": { "required": ["owners"] } }
+  ],
+  "definitions": {
+    "url": { "type": "string", "pattern": "^https?://" },
+    "manifest": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "tier", "url"],
+      "properties": {
+        "id": {
+          "description": "Short name, unique across all files; the snapshot is stored in the manifests directory as <id>.json.",
+          "type": "string",
+          "pattern": "^[a-z0-9-]+$"
+        },
+        "tier": { "enum": ["official", "community", "other"] },
+        "category": {
+          "description": "Fallback category key for plugins none of whose capabilities are in capability_categories.",
+          "type": "string",
+          "minLength": 1
+        },
+        "unsupported_plugins": {
+          "description": "Plugin IDs from this manifest that implement functionality outside Silo's supported scope and need an unsupported disclaimer.",
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 }
+        },
+        "url": {
+          "description": "https URL of the manifest JSON, fetched only by -update-manifests.",
+          "type": "string",
+          "pattern": "^https://"
+        }
+      }
+    },
+    "category": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["key", "display"],
+      "properties": {
+        "key": { "type": "string", "minLength": 1 },
+        "display": { "type": "string", "minLength": 1 }
+      }
+    },
+    "plugin": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name", "description", "category", "tier", "url"],
+      "properties": {
+        "name": { "type": "string", "minLength": 1 },
+        "description": { "type": "string", "minLength": 1 },
+        "category": {
+          "description": "A category key from the categories section of plugins.yaml.",
+          "type": "string",
+          "minLength": 1
+        },
+        "tier": {
+          "description": "official: maintained by the Silo project. community: maintained by the plugin's own community or author and endorsed or widely used. other: everything else.",
+          "enum": ["official", "community", "other"]
+        },
+        "url": {
+          "description": "Where to find the plugin: its homepage or repository.",
+          "$ref": "#/definitions/url"
+        },
+        "oss": {
+          "description": "Source repository URL, if the plugin is open source.",
+          "$ref": "#/definitions/url"
+        },
+        "beta": { "type": "boolean" },
+        "unsupported": {
+          "description": "Displays a warning that Silo does not support this plugin and asking for support on an official Silo channel will result in a ban.",
+          "type": "boolean"
+        }
+      }
+    }
+  }
+}

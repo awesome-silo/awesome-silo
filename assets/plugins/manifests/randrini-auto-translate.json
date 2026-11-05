@@ -1,0 +1,16 @@
+{
+  "source": "https://raw.githubusercontent.com/randrini/silo-auto-translate/main/manifest.json",
+  "plugins": [
+    {
+      "id": "com.randrini.silo-auto-translate",
+      "name": "Silo Auto Translate",
+      "summary": "Rating a profile item triggers automatic French subtitle extraction and translation via SubExtractor.",
+      "repo_url": "https://github.com/randrini/silo-auto-translate",
+      "capabilities": [
+        "http_routes.v1",
+        "watch_sync_provider.v1",
+        "request_router.v1"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,183 @@
+# yaml-language-server: $schema=./schema.json
+categories:
+  - key: ui
+    display: "🎨 UI & Customization"
+  - key: collections
+    display: "📂 Collections & Playlists"
+  - key: playback
+    display: "▶️ Playback"
+  - key: integration
+    display: "🔗 Integration & Sync"
+  - key: notifications
+    display: "🔔 Notifications"
+  - key: auth
+    display: "🔐 Authentication"
+  - key: library
+    display: "📚 Library Management"
+  - key: metadata
+    display: "🏷️ Metadata Providers"
+  - key: network
+    display: "🌐 Networking & Remote Access"
+
+manifests:
+  - id: official
+    tier: official
+    url: https://raw.githubusercontent.com/Silo-Server/silo-plugins/main/manifest.json
+  - id: community
+    tier: community
+    url: https://raw.githubusercontent.com/Silo-Community/silo-plugins/main/manifest.json
+  - id: apo-silo-plugins
+    tier: other
+    category: collections
+    url: https://raw.githubusercontent.com/apoapostolov/apos-silo-plugins/main/repository.json
+  - id: artic0din-metadata-apple
+    tier: other
+    category: metadata
+    url: https://raw.githubusercontent.com/Artic0din/silo-plugin-metadata-apple/main/manifest.json
+  - id: artic0din-metadata-aura
+    tier: other
+    category: metadata
+    url: https://raw.githubusercontent.com/Artic0din/silo-plugin-metadata-aura/main/manifest.json
+  - id: baine-shoko
+    tier: other
+    category: integration
+    url: https://raw.githubusercontent.com/Baine/silo-plugin-shoko/main/manifest.json
+  - id: beisem-plex-artwork-sync
+    tier: other
+    category: integration
+    url: https://raw.githubusercontent.com/BEisem/silo-plex-artwork-sync/main/manifest.json
+  - id: blurbery-markers-introdb-app
+    tier: other
+    category: playback
+    url: https://raw.githubusercontent.com/blurbery/silo-plugin-markers-introdb-app/main/manifest.json
+  - id: blurbery-metadata-fanarttv
+    tier: other
+    category: metadata
+    url: https://raw.githubusercontent.com/blurbery/silo-plugin-metadata-fanarttv/main/manifest.json
+  - id: brady3035-playback-reporting
+    tier: other
+    category: playback
+    url: https://raw.githubusercontent.com/Brady3035/silo-plugin-playback-reporting/main/manifest.json
+  - id: bulderi-letterboxd
+    tier: other
+    category: integration
+    url: https://raw.githubusercontent.com/bulderi/silo-plugin-letterboxd/main/manifest.json
+  - id: cmanson38-sonarr-prefetch
+    tier: other
+    category: integration
+    url: https://raw.githubusercontent.com/CManson38/silo-plugin-sonarr-prefetch/main/manifest.json
+  - id: crowquillx-silo-plugins
+    tier: other
+    category: collections
+    url: https://raw.githubusercontent.com/crowquillx/crowquillx-silo-plugins/main/repository.json
+  - id: drondeseries-aiometadata
+    tier: other
+    category: metadata
+    url: https://raw.githubusercontent.com/drondeseries/silo-plugin-aiometadata/main/manifest.json
+  - id: mildman1848-silo-plugins
+    tier: other
+    category: collections
+    url: https://raw.githubusercontent.com/mildman1848/silo-plugins/main/manifest.json
+  - id: mediux
+    tier: other
+    category: metadata
+    url: https://raw.githubusercontent.com/Pukabyte/silo-plugin-mediux/main/index.json
+  - id: neilmc78-auth-plex
+    tier: other
+    category: auth
+    url: https://raw.githubusercontent.com/neilmc78/silo-plugin-auth-plex/main/manifest.json
+  - id: neilmc78-metadata-omdb
+    tier: other
+    category: metadata
+    url: https://raw.githubusercontent.com/neilmc78/silo-plugin-metadata-omdb/main/manifest.json
+  - id: neilmc78-request-scryer
+    tier: other
+    category: integration
+    url: https://raw.githubusercontent.com/neilmc78/silo-plugin-request-scryer/main/manifest.json
+  - id: neilsb-yamtrack
+    tier: other
+    category: integration
+    url: https://raw.githubusercontent.com/neilsb/silo-plugin-yamtrack/main/manifest.json
+  - id: net005-metadata-stash
+    tier: other
+    category: metadata
+    url: https://raw.githubusercontent.com/Net005/silo-plugin-metadata-stash/main/manifest.json
+  - id: olivertgwalton-request-riven
+    tier: other
+    category: integration
+    url: https://raw.githubusercontent.com/olivertgwalton/silo-plugins-request-riven/main/manifest.json
+  - id: outragedpeanut-tracearr
+    tier: other
+    category: integration
+    url: https://raw.githubusercontent.com/outragedpeanut/silo-tracearr/main/manifest.json
+  - id: pasithea0-tiny-subtitles
+    tier: other
+    category: library
+    url: https://raw.githubusercontent.com/Pasithea0/silo-plugin-tiny-subtitles/main/manifest.json
+  - id: punchplay-silo-plugin
+    tier: other
+    category: integration
+    url: https://raw.githubusercontent.com/PunchPlay/silo-plugin-punchplay/main/manifest.json
+  - id: randrini-auto-translate
+    tier: other
+    category: library
+    url: https://raw.githubusercontent.com/randrini/silo-auto-translate/main/manifest.json
+  - id: rickdb-metadata-shoko
+    tier: other
+    category: metadata
+    url: https://raw.githubusercontent.com/RickDB/silo-plugin-metadata-shoko/main/manifest.json
+  - id: rmarku-auth-oidc
+    tier: other
+    category: auth
+    url: https://raw.githubusercontent.com/rmarku/silo-plugin-auth-oidc/main/manifest.json
+  - id: theramindex-silo-plugins
+    tier: other
+    category: collections
+    url: https://raw.githubusercontent.com/theramindex/silo-plugins/main/manifest.json
+    unsupported_plugins:
+      - silo.ramindex.dispatcharr
+      - silo.ramindex.hdhomerun
+      - silo.ramindex.xtream
+  - id: totza2010-metadata-hardcover
+    tier: other
+    category: metadata
+    url: https://raw.githubusercontent.com/totza2010/silo-plugin-metadata-hardcover/main/manifest.json
+  - id: wetrakr-silo
+    tier: other
+    category: integration
+    url: https://raw.githubusercontent.com/wetrakr/wetrakr-silo/main/manifest.json
+  - id: zerodayz1-omdb
+    tier: other
+    category: metadata
+    url: https://raw.githubusercontent.com/zerodayz1/silo-plugin-omdb/main/manifest.json
+
+capability_categories:
+  network_access_provider.v1: network
+  metadata_provider.v1: metadata
+  image_resolver.v1: metadata
+  auth_provider.v1: auth
+  scan_source.v1: library
+  request_router.v1: integration
+  watch_sync_provider.v1: integration
+  marker_provider.v1: playback
+  event_consumer.v1: playback
+
+plugins:
+  - name: "Tracearr Bridge"
+    description: "Provides Tracearr monitoring, library synchronization, artwork, and stream termination for Silo."
+    category: integration
+    tier: other
+    url: https://github.com/neilsb/silo-tracearr-bridge
+    oss: https://github.com/neilsb/silo-tracearr-bridge
+  - name: "Discord"
+    description: "Integrates Silo with Discord."
+    category: integration
+    tier: other
+    url: https://github.com/thezak48/silo-plugin-discord
+    oss: https://github.com/thezak48/silo-plugin-discord
+  - name: "Scrob Watch Provider (Foux)"
+    description: "Synchronizes watch history, progress, ratings, and live playback with a self-hosted Scrob server."
+    category: integration
+    tier: other
+    url: https://github.com/foux/silo-plugin-watchprovider-scrob
+    oss: https://github.com/foux/silo-plugin-watchprovider-scrob

@@ -1,0 +1,16 @@
+{
+  "source": "https://raw.githubusercontent.com/Pukabyte/silo-plugin-mediux/main/index.json",
+  "plugins": [
+    {
+      "id": "community.mediux",
+      "name": "Mediux Artwork",
+      "summary": "Artwork from Mediux for TMDB and TVDB identified media.",
+      "repo_url": "https://github.com/Pukabyte/silo-plugin-mediux",
+      "capabilities": [
+        "metadata_provider.v1",
+        "image_resolver.v1",
+        "http_routes.v1"
+      ]
+    }
+  ]
+}

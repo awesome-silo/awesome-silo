@@ -1,0 +1,15 @@
+{
+  "source": "https://raw.githubusercontent.com/Artic0din/silo-plugin-metadata-apple/main/manifest.json",
+  "plugins": [
+    {
+      "id": "artic0din.apple-artwork",
+      "name": "Apple TV Artwork",
+      "summary": "Choose Apple TV artwork in Silo's image picker.",
+      "repo_url": "https://github.com/Artic0din/silo-plugin-metadata-apple",
+      "capabilities": [
+        "metadata_provider.v1",
+        "image_resolver.v1"
+      ]
+    }
+  ]
+}

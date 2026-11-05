@@ -1,0 +1,15 @@
+{
+  "source": "https://raw.githubusercontent.com/Artic0din/silo-plugin-metadata-aura/main/manifest.json",
+  "plugins": [
+    {
+      "id": "artic0din.aura-artwork",
+      "name": "AURA Artwork",
+      "summary": "Choose MediUX artwork from AURA in Silo's image picker.",
+      "repo_url": "https://github.com/Artic0din/silo-plugin-metadata-aura",
+      "capabilities": [
+        "metadata_provider.v1",
+        "image_resolver.v1"
+      ]
+    }
+  ]
+}

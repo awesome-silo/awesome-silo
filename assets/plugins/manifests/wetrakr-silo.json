@@ -1,0 +1,14 @@
+{
+  "source": "https://raw.githubusercontent.com/wetrakr/wetrakr-silo/main/manifest.json",
+  "plugins": [
+    {
+      "id": "com.wetrakr.watchprovider",
+      "name": "WeTrakr",
+      "summary": "Sync Silo watch activity, lists, ratings and dropped shows with WeTrakr, and scrobble what you play.",
+      "repo_url": "https://github.com/wetrakr/wetrakr-silo",
+      "capabilities": [
+        "watch_sync_provider.v1"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "source": "https://raw.githubusercontent.com/totza2010/silo-plugin-metadata-hardcover/main/manifest.json",
+  "plugins": [
+    {
+      "id": "silo.metadata.hardcover",
+      "name": "Hardcover Metadata",
+      "summary": "Book metadata from Hardcover: authors, series, covers, publishers, and genres from one source.",
+      "repo_url": "https://github.com/totza2010/silo-plugin-metadata-hardcover",
+      "capabilities": [
+        "metadata_provider.v1"
+      ]
+    }
+  ]
+}

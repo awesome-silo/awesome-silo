@@ -1,0 +1,15 @@
+{
+  "source": "https://raw.githubusercontent.com/Pasithea0/silo-plugin-tiny-subtitles/main/manifest.json",
+  "plugins": [
+    {
+      "id": "pasithea.tiny-subtitles",
+      "name": "Tiny Subtitles",
+      "summary": "Generates subtitles for Silo on your own hardware: a local speech model transcribes the audio, then Desert Ant Align snaps every word to the waveform.",
+      "repo_url": "https://github.com/Pasithea0/silo-plugin-tiny-subtitles",
+      "capabilities": [
+        "http_routes.v1",
+        "scheduled_task.v1"
+      ]
+    }
+  ]
+}

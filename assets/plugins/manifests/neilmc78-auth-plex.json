@@ -1,0 +1,15 @@
+{
+  "source": "https://raw.githubusercontent.com/neilmc78/silo-plugin-auth-plex/main/manifest.json",
+  "plugins": [
+    {
+      "id": "neilmc78.auth.plex",
+      "name": "Plex Sign-in",
+      "summary": "Sign in to Silo with a Plex account that can reach your Plex server.",
+      "repo_url": "https://github.com/neilmc78/silo-plugin-auth-plex",
+      "capabilities": [
+        "auth_provider.v1",
+        "http_routes.v1"
+      ]
+    }
+  ]
+}

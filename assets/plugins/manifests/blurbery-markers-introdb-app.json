@@ -1,0 +1,14 @@
+{
+  "source": "https://raw.githubusercontent.com/blurbery/silo-plugin-markers-introdb-app/main/manifest.json",
+  "plugins": [
+    {
+      "id": "silo.introdb-app",
+      "name": "IntroDB.app Markers",
+      "summary": "Fetch TV intro, recap, and credit markers from IntroDB.app.",
+      "repo_url": "https://github.com/blurbery/silo-plugin-markers-introdb-app",
+      "capabilities": [
+        "marker_provider.v1"
+      ]
+    }
+  ]
+}

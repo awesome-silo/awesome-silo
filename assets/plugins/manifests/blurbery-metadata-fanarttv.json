@@ -1,0 +1,14 @@
+{
+  "source": "https://raw.githubusercontent.com/blurbery/silo-plugin-metadata-fanarttv/main/manifest.json",
+  "plugins": [
+    {
+      "id": "blurbery.fanarttv",
+      "name": "fanart.tv Artwork",
+      "summary": "Posters, backgrounds, logos, clear art, disc art, banners, thumbs and season posters from fanart.tv.",
+      "repo_url": "https://github.com/blurbery/silo-plugin-metadata-fanarttv",
+      "capabilities": [
+        "metadata_provider.v1"
+      ]
+    }
+  ]
+}

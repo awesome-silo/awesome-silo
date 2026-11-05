@@ -1,0 +1,33 @@
+{
+  "source": "https://raw.githubusercontent.com/apoapostolov/apos-silo-plugins/main/repository.json",
+  "plugins": [
+    {
+      "id": "community.watchprovider.trakt",
+      "name": "Trakt Watch Provider",
+      "summary": "Sync Silo watch activity, lists, ratings, and dropped shows with Trakt.",
+      "repo_url": "https://github.com/apoapostolov/apos-silo-plugins/tree/main/plugins/watchprovider-trakt",
+      "capabilities": [
+        "watch_sync_provider.v1"
+      ]
+    },
+    {
+      "id": "silo.apple-podcasts-metadata",
+      "name": "Apple Podcasts Metadata",
+      "summary": "Match podcast shows against the Apple Podcasts directory and fill in the description, publisher, genre, language, and square cover art.",
+      "repo_url": "https://github.com/apoapostolov/apos-silo-plugins/tree/main/plugins/metadata-apple-podcasts",
+      "capabilities": [
+        "metadata_provider.v1",
+        "image_resolver.v1"
+      ]
+    },
+    {
+      "id": "silo.comicinfo-metadata",
+      "name": "ComicInfo Metadata",
+      "summary": "Enrich mainstream comics from a local Grand Comics Database dump, ComicVine, or Metron, with a filename fallback when no source answers.",
+      "repo_url": "https://github.com/apoapostolov/apos-silo-plugins/tree/main/plugins/metadata-comicinfo",
+      "capabilities": [
+        "metadata_provider.v1"
+      ]
+    }
+  ]
+}

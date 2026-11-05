@@ -1,0 +1,15 @@
+{
+  "source": "https://raw.githubusercontent.com/Baine/silo-plugin-shoko/main/manifest.json",
+  "plugins": [
+    {
+      "id": "shoko-watch-state",
+      "name": "Shoko Watch State",
+      "summary": "Keeps watched episodes in step with a Shoko Server library.",
+      "repo_url": "https://github.com/Baine/silo-plugin-shoko",
+      "capabilities": [
+        "watch_sync_provider.v1",
+        "http_routes.v1"
+      ]
+    }
+  ]
+}

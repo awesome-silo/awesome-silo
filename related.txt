@@ -1,0 +1,4 @@
+# GitHub repository URL | display name
+https://github.com/mvanbaak/silo-plugins-freebsd | FreeBSD Silo plugin catalog
+https://github.com/BEisem/siloquy | Siloquy
+https://github.com/outragedpeanut/silo-seasonal-lists | Seasonal episode lists

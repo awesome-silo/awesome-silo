@@ -1,0 +1,57 @@
+{
+  "source": "https://raw.githubusercontent.com/crowquillx/crowquillx-silo-plugins/main/repository.json",
+  "plugins": [
+    {
+      "id": "dev.crowquillx.anilist-sync",
+      "name": "AniList Sync",
+      "summary": "Syncs anime watch progress and movie ratings with AniList through Silo's watch-provider pipeline.",
+      "repo_url": "https://github.com/crowquillx/silo-anilist-sync",
+      "capabilities": [
+        "watch_sync_provider.v1",
+        "watch_sync_provider.v1",
+        "http_routes.v1"
+      ]
+    },
+    {
+      "id": "dev.crowquillx.comic-pages",
+      "name": "Comic Pages (Deprecated)",
+      "summary": "Deprecated: This plugin is no longer maintained and may not work with current Silo releases. It will be removed from this catalog.",
+      "repo_url": "https://github.com/crowquillx/silo-comic-pages",
+      "capabilities": [
+        "http_routes.v1"
+      ]
+    },
+    {
+      "id": "dev.crowquillx.light-novel-metadata",
+      "name": "Light Novel Metadata (Deprecated)",
+      "summary": "Deprecated: This plugin is no longer maintained and may not work with current Silo releases. It will be removed from this catalog.",
+      "repo_url": "https://github.com/crowquillx/silo-light-novel-metadata",
+      "capabilities": [
+        "metadata_provider.v1"
+      ]
+    },
+    {
+      "id": "dev.crowquillx.theme-songs",
+      "name": "Theme Songs",
+      "summary": "Downloads theme songs for movies and series, with season openings and endings for anime from AnimeThemes.",
+      "repo_url": "https://github.com/crowquillx/silo-theme-songs",
+      "capabilities": [
+        "scheduled_task.v1",
+        "event_consumer.v1",
+        "http_routes.v1"
+      ]
+    },
+    {
+      "id": "silo.shokoanime",
+      "name": "ShokoAnime VFS (Deprecated)",
+      "summary": "Deprecated: This plugin is no longer maintained and may not work with current Silo releases. It will be removed from this catalog.",
+      "repo_url": "https://github.com/crowquillx/silo-shoko-plugin",
+      "capabilities": [
+        "metadata_provider.v1",
+        "image_resolver.v1",
+        "scheduled_task.v1",
+        "scan_source.v1"
+      ]
+    }
+  ]
+}

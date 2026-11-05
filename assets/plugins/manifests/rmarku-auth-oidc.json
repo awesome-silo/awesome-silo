@@ -1,0 +1,14 @@
+{
+  "source": "https://raw.githubusercontent.com/rmarku/silo-plugin-auth-oidc/main/manifest.json",
+  "plugins": [
+    {
+      "id": "community.silo-plugin-auth-oidc",
+      "name": "OIDC Auth Provider",
+      "summary": "Sign in to Silo with any OpenID Connect identity provider.",
+      "repo_url": "https://github.com/rmarku/silo-plugin-auth-oidc",
+      "capabilities": [
+        "auth_provider.v1"
+      ]
+    }
+  ]
+}

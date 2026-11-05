@@ -16,9 +16,14 @@
 
 <table width="500px" align="center">
   <tr>
-    <th width="500px" align="center">
+    <th width="250px" align="center">
       <h3><a href="CLIENTS.md">📺 Clients</a></h3>
       Browse available clients for all platforms<br />
+      <img width="1" height="10" />
+    </th>
+    <th width="250px" align="center">
+      <h3><a href="PLUGINS.md">🧩 Plugins</a></h3>
+      Browse available plugins<br />
       <img width="1" height="10" />
     </th>
   </tr>
@@ -26,41 +31,7 @@
 
 ## 🧩 Plugins
 
-
-### 🎨 UI & Customization
-
-<!-- sort list:plugins-ui -->
-
-### 📂 Collections & Playlists
-
-<!-- sort list:plugins-collections -->
-
-### ▶️ Playback
-
-<!-- sort list:plugins-playback -->
-
-### 🔗 Integration & Sync
-
-<!-- sort list:plugins-integration -->
-
-### 🔔 Notifications
-
-<!-- sort list:plugins-notifications -->
-
-### 🔐 Authentication
-
-<!-- sort list:plugins-auth -->
-
-
-### 📚 Library Management
-
-<!-- sort list:plugins-library -->
-
-
-### 🏷️ Metadata Providers
-
-<!-- sort list:metadata-providers -->
-
+Browse available plugins, grouped by category and marked as official, community or other, in [PLUGINS.md](PLUGINS.md).
 
 ## 👾 Companion Apps & Tools
 
@@ -126,8 +97,14 @@
 ## 🌌 Related
 
 This section includes software, guides and tools that are not *specifically* designed to work with Silo, but can be useful for tasks related to media management or to enhance Silo's functionality.
+The links are maintained in [related.txt](related.txt), and GitHub descriptions are refreshed weekly through a pull request.
 
 <!-- sort list:related -->
+<!-- related-projects:start -->
+- [FreeBSD Silo plugin catalog](https://github.com/mvanbaak/silo-plugins-freebsd) - No GitHub description provided.
+- [Seasonal episode lists](https://github.com/outragedpeanut/silo-seasonal-lists) - Seasonal episode lists for use with the Silo Seasonal Episodes plugin
+- [Siloquy](https://github.com/BEisem/siloquy) - Live Silo media server stats as Discord voice-channel counters
+<!-- related-projects:end -->
 
 ## Communities
 

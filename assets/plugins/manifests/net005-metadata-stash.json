@@ -1,0 +1,30 @@
+{
+  "source": "https://raw.githubusercontent.com/Net005/silo-plugin-metadata-stash/main/manifest.json",
+  "plugins": [
+    {
+      "id": "stash.metadata",
+      "name": "Stash Metadata",
+      "summary": "Use StashApp as Silo's scene metadata and watch provider.",
+      "repo_url": "https://github.com/Net005/silo-plugin-metadata-stash",
+      "capabilities": [
+        "metadata_provider.v1",
+        "image_resolver.v1",
+        "watch_sync_provider.v1",
+        "scheduled_task.v1",
+        "scheduled_task.v1",
+        "scheduled_task.v1",
+        "scheduled_task.v1",
+        "scheduled_task.v1",
+        "scheduled_task.v1",
+        "scheduled_task.v1",
+        "scheduled_task.v1",
+        "scheduled_task.v1",
+        "scheduled_task.v1",
+        "scheduled_task.v1",
+        "http_routes.v1",
+        "scheduled_task.v1",
+        "scheduled_task.v1"
+      ]
+    }
+  ]
+}

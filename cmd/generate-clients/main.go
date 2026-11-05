@@ -2,7 +2,6 @@ package main
 
 import (
 	"bytes"
-	"encoding/json"
 	"flag"
 	"fmt"
 	"os"
@@ -12,8 +11,8 @@ import (
 	"text/template"
 
 	generator "github.com/awesome-jellyfin/clients-md-generator"
+	"github.com/awesome-silo/awesome-silo/internal/yamlschema"
 	"github.com/santhosh-tekuri/jsonschema/v5"
-	"gopkg.in/yaml.v3"
 )
 
 type pageData struct {
@@ -41,7 +40,7 @@ func run(clientsFile, clientsDir, schemaFile, templateFile, outputFile string, c
 		return fmt.Errorf("compile client schema: %w", err)
 	}
 
-	if err := validateYAML(schema, clientsFile); err != nil {
+	if err := yamlschema.Validate(schema, clientsFile); err != nil {
 		return err
 	}
 	config, err := generator.LoadConfig(clientsFile)
@@ -55,7 +54,7 @@ func run(clientsFile, clientsDir, schemaFile, templateFile, outputFile string, c
 	}
 	sort.Strings(paths)
 	for _, path := range paths {
-		if err := validateYAML(schema, path); err != nil {
+		if err := yamlschema.Validate(schema, path); err != nil {
 			return err
 		}
 		extra, err := generator.LoadConfig(path)
@@ -260,30 +259,6 @@ func hasType(client *generator.Client, typeKey string) bool {
 		}
 	}
 	return false
-}
-
-func validateYAML(schema *jsonschema.Schema, path string) error {
-	data, err := os.ReadFile(path)
-	if err != nil {
-		return fmt.Errorf("read %s: %w", path, err)
-	}
-
-	var document any
-	if err := yaml.Unmarshal(data, &document); err != nil {
-		return fmt.Errorf("parse YAML %s: %w", path, err)
-	}
-	jsonDocument, err := json.Marshal(document)
-	if err != nil {
-		return fmt.Errorf("convert %s to JSON for schema validation: %w", path, err)
-	}
-	var value any
-	if err := json.Unmarshal(jsonDocument, &value); err != nil {
-		return fmt.Errorf("decode JSON for %s: %w", path, err)
-	}
-	if err := schema.Validate(value); err != nil {
-		return fmt.Errorf("validate %s: %w", path, err)
-	}
-	return nil
 }
 
 func validateReferences(config *generator.ClientsConfig) error {

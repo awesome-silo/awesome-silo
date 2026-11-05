@@ -6,6 +6,7 @@ on:
       - "CLIENTS.md"
       - "assets/clients/**"
       - "cmd/generate-clients/**"
+      - "internal/**"
       - "go.mod"
       - "go.sum"
       - ".github/workflows/generate-clients.yaml"
@@ -14,6 +15,7 @@ on:
     paths:
       - "assets/clients/**"
       - "cmd/generate-clients/**"
+      - "internal/**"
       - "go.mod"
       - "go.sum"
       - ".github/workflows/generate-clients.yaml"

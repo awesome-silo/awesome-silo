@@ -72,12 +72,13 @@ If two items end up with the same canonical text, their **original order** is pr
 
 ## Templated Content
 
-Some files in this repository are automatically generated from other source files. For example, `CLIENTS.md` is generated from `assets/clients/clients.yaml`, the files in `assets/clients/clients.d`, and `assets/clients/CLIENTS.md.tmpl`. `THEMES.md` is generated from the files in `assets/themes/themes.d`: copy [`_template.yaml`](assets/themes/themes.d/_template.yaml) to start a new theme, and see the [themes README](assets/themes/README.md) for the full format.
+Some files in this repository are automatically generated from other source files. For example, `CLIENTS.md` is generated from `assets/clients/clients.yaml`, the files in `assets/clients/clients.d`, and `assets/clients/CLIENTS.md.tmpl`. `PLUGINS.md` is generated from `assets/plugins/plugins.yaml` and the files in `assets/plugins/plugins.d` (see the [plugins README](assets/plugins/README.md)). `THEMES.md` is generated from the files in `assets/themes/themes.d`: copy [`_template.yaml`](assets/themes/themes.d/_template.yaml) to start a new theme, and see the [themes README](assets/themes/README.md) for the full format.
 
 - **Do not edit these generated files directly.** Instead, edit the original source files from which they’re generated.
 - Each generated file clearly indicates that it is automatically generated.
 - For client list changes, run `go run ./cmd/generate-clients` from the repository root and include the updated `CLIENTS.md` in your pull request. Run `go run ./cmd/generate-clients -check` to verify it is current without changing files.
-- The client-generation workflow previews the generated file on pull requests and regenerates it on `main`.
+- For plugin list changes, run `go run ./cmd/generate-plugins` and include the updated `PLUGINS.md`. Run `go run ./cmd/generate-plugins -check` to verify it is current. Official and approved community plugins come from the Silo project's manifests (refreshed daily; see the [plugins README](assets/plugins/README.md)), so don't add them by hand. Plugin authors can maintain their own entries, or point to their own catalog, in a file in `assets/plugins/plugins.d` (see its [README](assets/plugins/plugins.d/README.md)).
+- The generation workflows preview the generated files on pull requests and regenerate them on `main`.
 
 > [!NOTE]
 > For pull requests, a preview of the updated generated files will appear in the **Checks** tab of the pull request.

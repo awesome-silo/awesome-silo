@@ -1,0 +1,15 @@
+{
+  "source": "https://raw.githubusercontent.com/CManson38/silo-plugin-sonarr-prefetch/main/manifest.json",
+  "plugins": [
+    {
+      "id": "community.requests.prefetch",
+      "name": "Prefetch",
+      "summary": "Request Sonarr searches for upcoming TV episodes as you watch in Silo.",
+      "repo_url": "https://github.com/CManson38/silo-plugin-sonarr-prefetch",
+      "capabilities": [
+        "event_consumer.v1",
+        "http_routes.v1"
+      ]
+    }
+  ]
+}

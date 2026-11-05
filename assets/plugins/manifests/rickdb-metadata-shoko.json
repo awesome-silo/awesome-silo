@@ -1,0 +1,15 @@
+{
+  "source": "https://raw.githubusercontent.com/RickDB/silo-plugin-metadata-shoko/main/manifest.json",
+  "plugins": [
+    {
+      "id": "shoko.anime",
+      "name": "Shoko Anime Metadata",
+      "summary": "Shoko anime metadata with native Shoko search and Group-to-Series mapping.",
+      "repo_url": "https://github.com/RickDB/silo-plugin-metadata-shoko",
+      "capabilities": [
+        "metadata_provider.v1",
+        "image_resolver.v1"
+      ]
+    }
+  ]
+}
