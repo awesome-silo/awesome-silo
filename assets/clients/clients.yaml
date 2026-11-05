@@ -851,3 +851,309 @@ clients:
         owner: Phioster
         repo: sanctum_daemon
 
+  - name: Coppelia
+    targets: [iOS, Android, Linux, macOS]
+    types: [Music, Compatible]
+    oss: https://github.com/j6k4m8/coppelia
+    official: false
+    beta: true
+    price:
+      free: true
+      paid: false
+    downloads:
+      - type: github
+        owner: j6k4m8
+        repo: coppelia
+
+  - name: Plappa
+    targets: [iOS]
+    types: [Music, Compatible]
+    oss: https://github.com/LeoKlaus/plappa
+    official: false
+    beta: false
+    downloads:
+      - type: app-store
+        id: "6475201956"
+
+  - name: Supersonic
+    targets: [Windows, Linux, macOS]
+    types: [Music, Compatible]
+    oss: https://github.com/dweymouth/supersonic
+    official: false
+    beta: true
+    downloads:
+      - type: github
+        owner: dweymouth
+        repo: supersonic
+      - type: flathub
+        package: io.github.dweymouth.supersonic
+
+  - name: Tauon Music Box
+    targets: [Windows, Linux]
+    types: [Music, Compatible]
+    oss: https://github.com/Taiko2k/TauonMusicBox
+    official: false
+    downloads:
+      - type: github
+        owner: Taiko2k
+        repo: TauonMusicBox
+      - type: flathub
+        package: com.github.taiko2k.tauonmb
+
+  - name: Manet
+    targets: [iOS]
+    types: [Music, Compatible]
+    website: https://tilo.dev/manet/
+    price:
+      free: true
+    downloads:
+      - type: app-store
+        id: "6470928235"
+
+  - name: Fintunes
+    targets: [Android, iOS]
+    types: [Music, Compatible]
+    oss: https://github.com/leinelissen/jellyfin-audio-player
+    official: false
+    beta: false
+    downloads:
+      - type: github
+        owner: leinelissen
+        repo: jellyfin-audio-player
+      - type: shield
+        icon: F-Droid
+        url: https://f-droid.org/en/packages/nl.moeilijkedingen.jellyfinaudioplayer
+      - type: google-play
+        id: nl.moeilijkedingen.jellyfinaudioplayer
+      - type: app-store
+        id: "1527732194"
+
+  - name: Symfonium
+    targets: [Android]
+    types: [Music, Compatible]
+    official: false
+    beta: true
+    website: https://symfonium.app
+    price:
+      paid: true
+    downloads:
+      - type: google-play
+        id: app.symfonik.music.player
+
+  - name: Finer
+    targets: [macOS, iOS]
+    types: [Music, Compatible]
+    website: https://monk-studio.com/finer
+    official: false
+    beta: false
+    price:
+      free: true
+    downloads:
+      - type: app-store
+        id: "6738301953"
+
+  - name: Discrete
+    targets: [iOS, macOS]
+    types: [Music, Compatible]
+    website: https://discrete.app/
+    price:
+      free: true
+      paid: true
+    official: false
+    beta: false
+    downloads:
+      - type: app-store
+        id: "6746067740"
+
+  - name: Jelly Music App
+    targets: [Browser, Windows, macOS, Linux]
+    types: [Music, Compatible]
+    oss: https://github.com/Stannnnn/jelly-app
+    official: false
+    beta: false
+    price:
+      free: true
+    downloads:
+      - type: github
+        owner: Stannnnn
+        repo: jelly-app
+
+  - name: Gelly
+    targets: [Linux]
+    types: [Music, Compatible]
+    oss: https://github.com/Fingel/gelly
+    official: false
+    beta: true
+    price:
+      free: true
+    downloads:
+      - type: github
+        owner: Fingel
+        repo: gelly
+      - type: flathub
+        package: io.m51.Gelly
+
+  - name: ampcast
+    targets: [Browser, Windows, Linux, macOS]
+    types: [Music, Compatible]
+    oss: https://github.com/rekkyrosso/ampcast
+    official: false
+    beta: true
+    price:
+      free: true
+      paid: false
+    downloads:
+      - type: github
+        owner: rekkyrosso
+        repo: ampcast
+
+  - name: Dee Jellie
+    targets: [iOS, AppleTV, macOS]
+    types: [Music, Compatible]
+    website: https://www.deejellie.com
+    official: false
+    beta: false
+    price:
+      free: false
+      paid: true
+    downloads:
+      - type: app-store
+        id: "6755585736"
+
+  - name: Jellify
+    targets: [iOS, Android]
+    types: [Music, Compatible]
+    oss: https://github.com/Jellify-Music/App
+    downloads:
+      - type: github
+        owner: Jellify-Music
+        repo: App
+      - type: shield
+        icon: App Store
+        label: TestFlight
+        url: https://testflight.apple.com/join/etVSc7ZQ
+
+  - name: Linthra
+    targets: [Android]
+    types: [Music, Compatible]
+    oss: https://github.com/TheZupZup/Linthra
+    official: false
+    beta: false
+    downloads:
+      - type: github
+        owner: TheZupZup
+        repo: Linthra
+      - type: shield
+        icon: F-Droid
+        url: https://f-droid.org/packages/io.github.thezupzup.linthra/
+
+  - name: RoadSonic
+    targets: [iOS]
+    types: [Music, Compatible]
+    official: false
+    beta: false
+    website: https://www.roadsonic.com/
+    price:
+      free: true
+      paid: true
+    downloads:
+      - type: app-store
+        id: "6811639958"
+
+  - name: Meringo
+    targets: [Android]
+    types: [Music, Compatible]
+    official: false
+    website: https://meringo.app
+    price:
+      free: false
+      paid: true
+    downloads:
+      - type: google-play
+        id: app.meringo
+
+targets:
+  - key: Browser
+    display: "🌎 Browser-Based"
+    has:
+      - name: Browser
+        mapped: Browser
+
+  - key: Desktop
+    display: "💻 Desktop"
+    has:
+      - name: Windows
+        mapped: Windows
+      - name: macOS
+        mapped: "macOS"
+      - name: Linux
+        mapped: "Linux"
+
+  - key: Mobile
+    display: "📱 Mobile"
+    has:
+      - name: iOS
+        mapped: "iOS"
+      - name: Android
+        mapped: "Android"
+      - name: SailfishOS
+        mapped: "Sailfish OS"
+      - name: HarmonyOS
+        mapped: "HarmonyOS"
+
+  - key: Console
+    display: "🎮 Console"
+    has:
+      - name: NintendoSwitch
+        mapped: "Nintendo Switch"
+      - name: Xbox
+        mapped: "Xbox"
+      - name: PlayStation
+        mapped: "PlayStation"
+
+  - key: TV
+    display: "📺 TV"
+    has:
+      - name: AppleTV
+        mapped: "Apple TV"
+      - name: tvOS
+        mapped: "Apple TV"
+      - name: AndroidTV
+        mapped: "Android TV"
+      - name: Kodi
+        mapped: "Kodi"
+      - name: Roku
+        mapped: "Roku"
+      - name: Tizen
+        mapped: "Tizen"
+      - name: Vega
+        mapped: "Vega"
+      - name: WebOS
+        mapped: "webOS"
+
+types:
+  - key: Official
+    badge: "🔹"
+
+  - key: Beta
+    badge: "⚒️"
+
+  - key: Music
+    badge: "🎵"
+    display: Music Client
+    section: true
+
+  - key: Reader
+    badge: "📖"
+    display: Reader
+    section: true
+
+  - key: Native
+    badge: "native"
+    display: Native API
+    section: true
+
+  - key: Compatible
+    badge: "compatible"
+    display: Jellyfin-compatible
+    section: true

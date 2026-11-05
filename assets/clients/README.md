@@ -1,6 +1,18 @@
 # Silo Client YAML Configuration Format
 
-The [bot](https://github.com/awesome-silo/bot) generates `CLIENTS.md` from `clients.yaml`, the files in [`clients.d`](clients.d/README.md) and the template [`CLIENTS.md.tmpl`](CLIENTS.md.tmpl).
+The local Go generator builds `CLIENTS.md` from `clients.yaml`, the files in [`clients.d`](clients.d/README.md), and the template [`CLIENTS.md.tmpl`](CLIENTS.md.tmpl). Run it from the repository root:
+
+```sh
+go run ./cmd/generate-clients
+```
+
+To verify that the checked-in output matches the source files without changing it:
+
+```sh
+go run ./cmd/generate-clients -check
+```
+
+The generator validates each YAML file against [`schema.json`](schema.json) and checks that client target and type references exist.
 
 [`schema.json`](schema.json) describes the format of `clients.yaml` and the `clients.d` files. Editors that support the `yaml-language-server` comment at the top of each file use it to check fields and suggest values as you type.
 

@@ -1,0 +1,96 @@
+name: Generate client list
+
+on:
+  pull_request:
+    paths:
+      - "CLIENTS.md"
+      - "assets/clients/**"
+      - "cmd/generate-clients/**"
+      - "go.mod"
+      - "go.sum"
+      - ".github/workflows/generate-clients.yaml"
+  push:
+    branches: [main]
+    paths:
+      - "assets/clients/**"
+      - "cmd/generate-clients/**"
+      - "go.mod"
+      - "go.sum"
+      - ".github/workflows/generate-clients.yaml"
+  workflow_dispatch:
+
+concurrency:
+  group: generate-clients-${{ github.ref }}
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  preview:
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5
+
+      - uses: actions/setup-go@924ae3a1cded613372ab5595356fb5720e22ba16 # v6
+        with:
+          go-version-file: go.mod
+          cache: true
+
+      - name: Generate client list
+        run: go run ./cmd/generate-clients -out /tmp/CLIENTS.md
+
+      - name: Verify generated file is up to date
+        run: |
+          if diff -u CLIENTS.md /tmp/CLIENTS.md > /tmp/CLIENTS.diff; then
+            echo "CLIENTS.md matches the generated output." >> "$GITHUB_STEP_SUMMARY"
+          else
+            {
+              echo "## Generated client list is out of date"
+              echo
+              echo "Run \`go run ./cmd/generate-clients\` locally and commit the updated \`CLIENTS.md\`."
+              echo
+              echo '```diff'
+              head -n 300 /tmp/CLIENTS.diff
+              echo '```'
+            } >> "$GITHUB_STEP_SUMMARY"
+            exit 1
+          fi
+
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        if: always()
+        with:
+          name: generated-clients-md
+          path: /tmp/CLIENTS.md
+          if-no-files-found: warn
+
+  regenerate:
+    if: github.event_name == 'push' || (github.event_name == 'workflow_dispatch' && github.ref == 'refs/heads/main')
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5
+
+      - uses: actions/setup-go@924ae3a1cded613372ab5595356fb5720e22ba16 # v6
+        with:
+          go-version-file: go.mod
+          cache: true
+
+      - name: Regenerate client list
+        run: go run ./cmd/generate-clients
+
+      - name: Open generated client list PR
+        uses: peter-evans/create-pull-request@22a9089034f40e5a961c8808d113e2c98fb63676 # v7
+        with:
+          add-paths: CLIENTS.md
+          branch: automation/regenerate-clients
+          delete-branch: true
+          commit-message: |
+            docs: regenerate client list
+
+            Co-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>
+          title: "docs: regenerate client list"
+          body: "Regenerate CLIENTS.md from the client YAML sources and template."

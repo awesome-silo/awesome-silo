@@ -11,30 +11,8 @@ To make changes, please edit those YAML files instead.
   <h1 align="center"><a href="https://github.com/awesome-silo/awesome-silo">Awesome Silo</a> > Clients</h1>
 </p>
 
-# By Environment
-{{ range .Environments }}
-## {{ .Name }}
-{{ $multiple := gt (len .Platforms) 1 }}
-{{- range .Platforms }}
-{{- if $multiple }}
-### {{ .Name }}
-{{ end }}
-{{ clientTable .Clients }}
-{{ end }}
-{{- end }}
----
+{{ .Body }}
 
-# By Type
-{{ range .Types }}
-## {{ .StringWithBadge }}
-
-{{ clientTable .Clients }}
-{{ end }}
----
-
-{{ range .Badges -}}
-* **{{ .String }}** ` {{ .Badge }} `
-{{ end }}
 ---
 
 > [!NOTE]
