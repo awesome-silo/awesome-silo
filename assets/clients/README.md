@@ -36,7 +36,7 @@ The `clients` section lists all Silo-compatible client applications, each with a
 | **`downloads`**     | List of **Download items**   | **Yes**  | A list describing where or how to download the client. Each item has a `type` to determine the resulting Markdown link or badge. |
 | **`types`**         | List of strings              | **Yes**  | Categories that apply to this client. Each client should include `Native` for Silo's native API or `Compatible` for Jellyfin clients supported through Silo's Jellyfin-emulation facility. Other categories include `Music` and `Reader`. |
 
-`Native` and `Compatible` appear as badges and in separate sections in the generated client list. Include exactly one of these categories for each client.
+`Native` and `Compatible` appear as separate top-level sections in the generated client list, with clients grouped beneath their environment and platform. They are not shown as badges beside client names. Include exactly one of these categories for each client.
 
 #### 1.1 `price` Structure
 
@@ -332,4 +332,4 @@ types:
     section: true
 ```
 
-When run through the Markdown generator, the result includes sections by environment (Desktop, Browser, etc.), and “By Type” sections for “Native API” and “Jellyfin-compatible” clients, as well as other types such as “Music Client”.
+When run through the Markdown generator, the result starts with a “Native” section followed by a “Compatible” section. Each groups clients by environment (Desktop, Browser, etc.) and platform. Other types marked with `section: true`, such as “Music Client”, appear in separate “By Type” tables.

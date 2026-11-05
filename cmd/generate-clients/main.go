@@ -69,8 +69,8 @@ func run(clientsFile, clientsDir, schemaFile, templateFile, outputFile string, c
 		return err
 	}
 
-	var body bytes.Buffer
-	if err := generator.CreateMarkdownDocument(&body, config); err != nil {
+	body, err := renderMarkdownDocument(config)
+	if err != nil {
 		return fmt.Errorf("render client tables: %w", err)
 	}
 
@@ -79,7 +79,7 @@ func run(clientsFile, clientsDir, schemaFile, templateFile, outputFile string, c
 		return fmt.Errorf("parse %s: %w", templateFile, err)
 	}
 	var output bytes.Buffer
-	if err := tmpl.Execute(&output, pageData{Body: body.String()}); err != nil {
+	if err := tmpl.Execute(&output, pageData{Body: body}); err != nil {
 		return fmt.Errorf("render %s: %w", templateFile, err)
 	}
 
@@ -100,6 +100,166 @@ func run(clientsFile, clientsDir, schemaFile, templateFile, outputFile string, c
 	}
 	fmt.Printf("Generated %s from %s and %d files in %s\n", outputFile, clientsFile, len(paths), clientsDir)
 	return nil
+}
+
+func renderMarkdownDocument(config *generator.ClientsConfig) (string, error) {
+	targetClients := make(map[string][]*generator.Client)
+	for _, client := range config.Clients {
+		for _, target := range client.Targets {
+			key := normalize(target)
+			targetClients[key] = append(targetClients[key], client)
+		}
+	}
+
+	var document generator.Vertical
+	for _, typeKey := range []string{"Native", "Compatible"} {
+		document.Append(generator.NewHeading(1, generator.NewText(typeKey)))
+		for _, targetGroup := range config.Targets {
+			group := generator.NewVertical()
+			hasMultipleTargets := len(targetGroup.Has) > 1
+
+			for _, target := range targetGroup.Has {
+				var clients []*generator.Client
+				for _, client := range targetClients[normalize(target.Name)] {
+					if hasType(client, typeKey) {
+						clients = append(clients, client)
+					}
+				}
+				if len(clients) == 0 {
+					continue
+				}
+
+				if hasMultipleTargets {
+					group.Append(generator.NewHeading(3, generator.NewText(target.Mapped)))
+				}
+				table, err := printClientTableWithoutClassificationBadges(clients, config)
+				if err != nil {
+					return "", err
+				}
+				group.Append(table)
+			}
+
+			if len(group) > 0 {
+				document.Append(generator.NewHeading(2, generator.NewText(targetGroup.Display)))
+				document.Append(&group)
+			}
+		}
+	}
+
+	var extraTypes generator.Vertical
+	for _, clientType := range config.Types {
+		if !clientType.Section || clientType.Key == "Native" || clientType.Key == "Compatible" {
+			continue
+		}
+
+		var clients []*generator.Client
+		for _, client := range config.Clients {
+			if hasType(client, clientType.Key) {
+				clients = append(clients, client)
+			}
+		}
+		if len(clients) == 0 {
+			continue
+		}
+		generator.SortClientsByName(clients)
+		table, err := printClientTableWithoutClassificationBadges(clients, config)
+		if err != nil {
+			return "", err
+		}
+
+		if len(extraTypes) == 0 {
+			extraTypes.Append(generator.NewHeading(1, generator.NewText("By Type")))
+		}
+		extraTypes.Append(generator.NewHeading(2, generator.NewText(clientType.StringWithBadge())))
+		extraTypes.Append(table)
+	}
+	document.Append(extraTypes...)
+
+	var badgeLegend generator.Vertical
+	for _, clientType := range config.Types {
+		if clientType.Badge == "" || clientType.Key == "Native" || clientType.Key == "Compatible" || clientType.Key == generator.OfficialTypeKey {
+			continue
+		}
+		badgeLegend.Append(generator.NewHorizontal(
+			generator.NewText(clientType.String(), generator.Bold),
+			generator.NewCode(clientType.Badge, generator.CodePadded),
+		))
+	}
+	if len(badgeLegend) > 0 {
+		document.Append(generator.HorizontalDivider{})
+		list := generator.NewList(false)
+		list.Append(badgeLegend...)
+		document.Append(list)
+	}
+
+	return document.Render(), nil
+}
+
+func printClientTableWithoutClassificationBadges(
+	clients []*generator.Client,
+	config *generator.ClientsConfig,
+) (generator.MarkdownRenderer, error) {
+	sorted := append([]*generator.Client(nil), clients...)
+	generator.SortClientsByName(sorted)
+
+	builder := generator.NewTableBuilder(
+		generator.NewText("Name"),
+		generator.NewText("Official"),
+		generator.NewText("OSS"),
+		generator.NewText("Free"),
+		generator.NewText("Paid"),
+		generator.NewText("Downloads"),
+	)
+
+	for _, client := range sorted {
+		official := generator.DerefDef(client.Official, strings.HasPrefix(client.OpenSourceURL, generator.JellyfinOrgURL))
+		free := generator.DerefDef(client.Price.Free, client.OpenSourceURL != "")
+		paid := generator.DerefDef(client.Price.Paid, false)
+
+		name := generator.NewHorizontal(generator.NewText(client.Name))
+		if generator.Deref(client.Beta) {
+			if betaType, ok := config.Types.FindType(generator.BetaTypeKey); ok && betaType.Badge != "" {
+				name.Append(generator.NewCode(betaType.Badge, generator.CodePadded))
+			}
+		}
+		for _, clientType := range client.Types {
+			if clientType == "Native" || clientType == "Compatible" {
+				continue
+			}
+			if t, ok := config.Types.FindType(clientType); ok && t.Badge != "" {
+				name.Append(generator.NewCode(t.Badge, generator.CodePadded))
+			}
+		}
+
+		var nameElement generator.MarkdownRenderer = name
+		if url := generator.Select(client.Website != "", client.Website, client.OpenSourceURL); url != "" {
+			nameElement = &generator.Link{Text: name, URL: url}
+		}
+
+		downloads := generator.NewHorizontal()
+		for _, download := range client.Downloads {
+			downloads.Append(download.Render())
+		}
+
+		builder.AddRow(
+			nameElement,
+			generator.NewText(generator.Select(official, generator.GoodTrue, generator.BadFalse)),
+			generator.NewText(generator.Select(client.OpenSourceURL != "", generator.GoodTrue, generator.BadFalse)),
+			generator.NewText(generator.Select(free, generator.GoodTrue, generator.BadFalse)),
+			generator.NewText(generator.Select(paid, generator.BadTrue, generator.GoodFalse)),
+			downloads,
+		)
+	}
+	return builder.Build(), nil
+}
+
+func hasType(client *generator.Client, typeKey string) bool {
+	for _, clientType := range client.Types {
+		if clientType == typeKey {
+			return true
+		}
+	}
+	return false
 }
 
 func validateYAML(schema *jsonschema.Schema, path string) error {

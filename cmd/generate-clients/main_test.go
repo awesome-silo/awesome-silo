@@ -47,6 +47,51 @@ func TestValidateReferencesRequiresOneCompatibilityType(t *testing.T) {
 	}
 }
 
+func TestRenderMarkdownDocumentPrioritizesClassificationByEnvironment(t *testing.T) {
+	config := &generator.ClientsConfig{
+		Clients: []*generator.Client{
+			{Name: "Compatible App", Targets: []string{"Windows"}, Types: []string{"Compatible"}},
+			{Name: "Native App", Targets: []string{"Windows"}, Types: []string{"Native"}},
+		},
+		Targets: []*generator.TargetGroup{
+			{
+				Display: "💻 Desktop",
+				Has: []*generator.Target{
+					{Name: "Windows", Mapped: "Windows"},
+					{Name: "macOS", Mapped: "macOS"},
+				},
+			},
+		},
+		Types: generator.ClientTypes{
+			&generator.ClientType{Key: "Native", Badge: "native", Section: true},
+			&generator.ClientType{Key: "Compatible", Badge: "compatible", Section: true},
+		},
+	}
+
+	got, err := renderMarkdownDocument(config)
+	if err != nil {
+		t.Fatalf("renderMarkdownDocument() error = %v", err)
+	}
+
+	nativeIndex := strings.Index(got, "# Native")
+	compatibleIndex := strings.Index(got, "# Compatible")
+	if nativeIndex < 0 || compatibleIndex < 0 || nativeIndex >= compatibleIndex {
+		t.Fatalf("classification headings are missing or out of order:\n%s", got)
+	}
+	if !strings.Contains(got[nativeIndex:compatibleIndex], "## 💻 Desktop\n\n### Windows") {
+		t.Fatalf("native clients are not grouped by environment and platform:\n%s", got)
+	}
+	if strings.Contains(got, "` native `") || strings.Contains(got, "` compatible `") {
+		t.Fatalf("classification badges should not appear beside client names:\n%s", got)
+	}
+	if !strings.Contains(got, "| Name | Official | OSS | Free | Paid | Downloads |") {
+		t.Fatalf("tables are missing the Official column:\n%s", got)
+	}
+	if strings.Index(got, "| Native App |") > strings.Index(got, "| Compatible App |") {
+		t.Fatalf("native client table should be rendered first:\n%s", got)
+	}
+}
+
 func TestValidateReferencesRejectsUnknownTargetAndType(t *testing.T) {
 	tests := []struct {
 		name    string
