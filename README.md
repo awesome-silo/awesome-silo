@@ -14,7 +14,7 @@
 ]
 </p>
 
-<table>
+<table width="500px" align="center">
   <tr>
     <th width="500px" align="center">
       <h3><a href="CLIENTS.md">📺 Clients</a></h3>
