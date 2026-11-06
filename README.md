@@ -29,62 +29,6 @@
   </tr>
 </table>
 
-## 🧩 Plugins
-
-Browse available plugins, grouped by category and marked as official, community or other, in [PLUGINS.md](PLUGINS.md).
-
-## 👾 Companion Apps & Tools
-
-
-### 🖼️ Artwork & Posters
-
-<!-- sort list:tools-artwork -->
-
-
-### 🔍 Media Requests & Discovery
-
-<!-- sort list:tools-requests -->
-
-
-### 📊 Statistics & Watch History
-
-<!-- sort list:tools-stats -->
-
-
-### 👥 User Management
-
-<!-- sort list:tools-users -->
-
-
-### 📁 Media Organization
-
-<!-- sort list:tools-organization -->
-
-
-### 💬 Subtitles
-
-<!-- sort list:tools-subtitles -->
-
-### 🎵 Music
-
-<!-- sort list:tools-music -->
-
-
-### 📥 Content Import
-
-<!-- sort list:tools-import -->
-
-
-### 🔧 Server Administration
-
-<!-- sort list:tools-admin -->
-
-
-### 🧰 Miscellaneous
-
-<!-- sort list:tools-misc -->
-
-
 ### 📜 Snippets
 
 <!--lint ignore awesome-list-item-->
