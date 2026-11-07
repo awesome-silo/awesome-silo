@@ -15,8 +15,9 @@ To make changes, please edit those YAML files instead.
 
 | Name | Tier | OSS | Description |
 | ---- | ---- | --- | ----------- |
-| [App Links](https://github.com/theramindex/silo-plugin-app-links) | Other | ✅ | Configurable external app launcher with fullscreen iframe shells and an admin app link manager. |
+| [App Links](https://github.com/theramindex/silo-plugin-app-links) | Other | ✅ | Adds an Apps page that launches the other services you run, in a new tab or inside Silo. |
 | [Comic Pages (Deprecated)](https://github.com/crowquillx/silo-comic-pages) | Other | ✅ | Deprecated: This plugin is no longer maintained and may not work with current Silo releases. It will be removed from this catalog. |
+| [RomM for Silo](https://github.com/theramindex/silo-plugin-romm) | Other | ✅ | Browse RomM and play classic games with profile-specific account links and saved progress. |
 
 ## ▶️ Playback
 
@@ -50,7 +51,7 @@ To make changes, please edit those YAML files instead.
 | [Silo Auto Translate](https://github.com/randrini/silo-auto-translate) | Other | ✅ | Rating a profile item triggers automatic French subtitle extraction and translation via SubExtractor. |
 | [Tracearr Bridge](https://github.com/neilsb/silo-tracearr-bridge) | Other | ✅ | Provides Tracearr monitoring, library synchronization, artwork, and stream termination for Silo. |
 | [Tracearr Connector](https://github.com/outragedpeanut/silo-tracearr) | Other | ✅ | Lets Tracearr monitor streams, users and sharing on this Silo server. |
-| [Trakt](https://github.com/theramindex/silo-plugin-watchprovider-trakt) | Other | ✅ | Two-way watch history, resume progress, favorites, watchlist, movie and show ratings, and dropped shows, plus live scrobbling, for Trakt accounts. |
+| [Trakt](https://github.com/theramindex/silo-plugin-watchprovider-trakt) | Other | ✅ | Sync Silo watch activity, lists, ratings, and dropped shows with Trakt. |
 | [Trakt Watch Provider](https://github.com/apoapostolov/apos-silo-plugins/tree/main/plugins/watchprovider-trakt) | Other | ✅ | Sync Silo watch activity, lists, ratings, and dropped shows with Trakt. |
 | [Watcharr Sync](https://github.com/mildman1848/silo-plugin-sync-watcharr) | Other | ✅ | Two-way watched movie and episode sync between Silo and Watcharr. |
 | [WeTrakr](https://github.com/wetrakr/wetrakr-silo) | Other | ✅ | Sync Silo watch activity, lists, ratings and dropped shows with WeTrakr, and scrobble what you play. |
@@ -92,7 +93,7 @@ To make changes, please edit those YAML files instead.
 | [fanart.tv Artwork](https://github.com/blurbery/silo-plugin-metadata-fanarttv) | Other | ✅ | Posters, backgrounds, logos, clear art, disc art, banners, thumbs and season posters from fanart.tv. |
 | [Hardcover Metadata](https://github.com/totza2010/silo-plugin-metadata-hardcover) | Other | ✅ | Book metadata from Hardcover: authors, series, covers, publishers, and genres from one source. |
 | [Light Novel Metadata (Deprecated)](https://github.com/crowquillx/silo-light-novel-metadata) | Other | ✅ | Deprecated: This plugin is no longer maintained and may not work with current Silo releases. It will be removed from this catalog. |
-| [Local Artwork](https://github.com/theramindex/silo-plugin-local-artwork) | Other | ✅ | Adds local posters, backdrops, logos, and stills alongside Silo's built-in NFO metadata. |
+| [Local Artwork](https://github.com/theramindex/silo-plugin-local-artwork) | Other | ✅ | Use posters, backdrops, logos, and stills stored beside your media files. |
 | [Mediux Artwork](https://github.com/Pukabyte/silo-plugin-mediux) | Other | ✅ | Artwork from Mediux for TMDB and TVDB identified media. |
 | [OMDb](https://github.com/zerodayz1/silo-plugin-omdb) | Other | ✅ | Enriches media items with IMDb ratings and Rotten Tomatoes critic scores via the OMDb API. |
 | [OMDb Metadata](https://github.com/neilmc78/silo-plugin-metadata-omdb) | Other | ✅ | Matches films TMDB does not list, such as fan films and fan edits, by their IMDb ID. |

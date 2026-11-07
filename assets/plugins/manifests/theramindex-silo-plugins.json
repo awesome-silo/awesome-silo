@@ -4,7 +4,7 @@
     {
       "id": "silo.ramindex.app-links",
       "name": "App Links",
-      "summary": "Configurable external app launcher with fullscreen iframe shells and an admin app link manager.",
+      "summary": "Adds an Apps page that launches the other services you run, in a new tab or inside Silo.",
       "repo_url": "https://github.com/theramindex/silo-plugin-app-links",
       "capabilities": [
         "http_routes.v1"
@@ -35,7 +35,7 @@
     {
       "id": "silo.ramindex.local-metadata",
       "name": "Local Artwork",
-      "summary": "Adds local posters, backdrops, logos, and stills alongside Silo's built-in NFO metadata.",
+      "summary": "Use posters, backdrops, logos, and stills stored beside your media files.",
       "repo_url": "https://github.com/theramindex/silo-plugin-local-artwork",
       "capabilities": [
         "metadata_provider.v1",
@@ -43,9 +43,18 @@
       ]
     },
     {
+      "id": "silo.ramindex.romm",
+      "name": "RomM for Silo",
+      "summary": "Browse RomM and play classic games with profile-specific account links and saved progress.",
+      "repo_url": "https://github.com/theramindex/silo-plugin-romm",
+      "capabilities": [
+        "http_routes.v1"
+      ]
+    },
+    {
       "id": "silo.ramindex.trakt",
       "name": "Trakt",
-      "summary": "Two-way watch history, resume progress, favorites, watchlist, movie and show ratings, and dropped shows, plus live scrobbling, for Trakt accounts.",
+      "summary": "Sync Silo watch activity, lists, ratings, and dropped shows with Trakt.",
       "repo_url": "https://github.com/theramindex/silo-plugin-watchprovider-trakt",
       "capabilities": [
         "watch_sync_provider.v1"
