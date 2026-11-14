@@ -67,24 +67,6 @@
       ]
     },
     {
-      "id": "silo.requests.arr",
-      "name": "Sonarr / Radarr",
-      "summary": "Fulfills movie/series requests against multi-instance Sonarr/Radarr.",
-      "repo_url": "https://github.com/Silo-Server/silo-plugins-requests-arr",
-      "capabilities": [
-        "request_router.v1"
-      ]
-    },
-    {
-      "id": "silo.requests.seerr",
-      "name": "Seerr",
-      "summary": "Fulfill content requests through a Seerr (Overseerr/Jellyseerr) instance.",
-      "repo_url": "https://github.com/Silo-Server/silo-plugins-requests-seerr",
-      "capabilities": [
-        "request_router.v1"
-      ]
-    },
-    {
       "id": "silo.sportarr",
       "name": "Sportarr Metadata",
       "summary": "Build sports libraries from Sportarr league, season, and event metadata.",

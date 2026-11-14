@@ -43,14 +43,15 @@
     },
     {
       "id": "silo.shokoanime",
-      "name": "ShokoAnime VFS (Deprecated)",
-      "summary": "Deprecated: This plugin is no longer maintained and may not work with current Silo releases. It will be removed from this catalog.",
+      "name": "ShokoAnime VFS",
+      "summary": "Builds a Shoko-backed virtual filesystem for Silo libraries.",
       "repo_url": "https://github.com/crowquillx/silo-shoko-plugin",
       "capabilities": [
         "metadata_provider.v1",
         "image_resolver.v1",
         "scheduled_task.v1",
-        "scan_source.v1"
+        "scan_source.v1",
+        "watch_sync_provider.v1"
       ]
     }
   ]
