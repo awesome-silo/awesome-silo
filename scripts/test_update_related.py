@@ -8,10 +8,14 @@ class RelatedUpdaterTests(unittest.TestCase):
         sources = parse_sources(
             "# source list\n"
             "https://github.com/example/project | Example Project\n"
+            "https://github.com/example/other | Other Project | Custom | description\n"
         )
         self.assertEqual(
             sources,
-            [("https://github.com/example/project", "example", "project", "Example Project")],
+            [
+                ("https://github.com/example/project", "example", "project", "Example Project", ""),
+                ("https://github.com/example/other", "example", "other", "Other Project", "Custom | description"),
+            ],
         )
 
         with self.assertRaisesRegex(ValueError, "duplicate repository URL"):
@@ -22,18 +26,18 @@ class RelatedUpdaterTests(unittest.TestCase):
 
     def test_render_entries_sorts_and_escapes_markdown(self):
         sources = [
-            ("https://github.com/example/z", "example", "z", "Z [project]"),
-            ("https://github.com/example/a", "example", "a", "A project"),
+            ("https://github.com/example/z", "example", "z", "Z [project]", ""),
+            ("https://github.com/example/a", "example", "a", "A project", ""),
         ]
         entries = render_entries(sources, {
             "https://github.com/example/z": "Description | one",
-            "https://github.com/example/a": "Another project",
+            "https://github.com/example/a": "Another project!",
         })
         self.assertEqual(
             entries.splitlines(),
             [
-                "- [A project](https://github.com/example/a) - Another project",
-                "- [Z \\[project\\]](https://github.com/example/z) - Description | one",
+                "- [A project](https://github.com/example/a) - Another project!",
+                "- [Z \\[project\\]](https://github.com/example/z) - Description | one.",
             ],
         )
 
