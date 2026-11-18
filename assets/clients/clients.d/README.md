@@ -1,7 +1,6 @@
 # `clients.d`
 
-> [!IMPORTANT]
-> **Please do not add your client here unless we ask you to.**
+> **Important: Please do not add your client here unless we ask you to.**
 > New clients go into [`clients.yaml`](../clients.yaml) like every other entry. If you open a pull request that adds a new file here without being asked, we will ask you to move the client to `clients.yaml`.
 
 ## What is this directory for?

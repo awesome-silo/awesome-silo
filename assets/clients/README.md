@@ -74,8 +74,7 @@ Each `Download` object has a **`type`** key (required) to determine which of the
 | **`app-store`** | `id`, optional `url`                                      | Renders an App Store shield linking to `https://apps.apple.com/app/id<id>` by default.                                                           |
 | **`google-play`** | `id`, optional `url`                                    | Renders a Google Play shield linking to `https://play.google.com/store/apps/details?id=<id>` by default.                                         |
 
-> [!IMPORTANT]
-> If a particular `type` key is unknown, the generator will fail with an error (`“unknown download type”`).
+> **Important:** If a particular `type` key is unknown, the generator will fail with an error (`“unknown download type”`).
 
 Below is an example `downloads` list for a single client:
 
