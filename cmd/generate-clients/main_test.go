@@ -81,7 +81,7 @@ func TestRenderMarkdownDocumentPrioritizesClassificationByEnvironment(t *testing
 	if !strings.Contains(got[nativeIndex:compatibleIndex], "## 💻 Desktop\n\n### Windows") {
 		t.Fatalf("native clients are not grouped by environment and platform:\n%s", got)
 	}
-	if strings.Contains(got, "` native `") || strings.Contains(got, "` compatible `") {
+	if strings.Contains(got, "`native`") || strings.Contains(got, "`compatible`") {
 		t.Fatalf("classification badges should not appear beside client names:\n%s", got)
 	}
 	if !strings.Contains(got, "| Name | Official | OSS | Free | Paid | Downloads |") {
@@ -89,6 +89,35 @@ func TestRenderMarkdownDocumentPrioritizesClassificationByEnvironment(t *testing
 	}
 	if strings.Index(got, "| Native App |") > strings.Index(got, "| Compatible App |") {
 		t.Fatalf("native client table should be rendered first:\n%s", got)
+	}
+}
+
+func TestRenderMarkdownDocumentDoesNotPadBadges(t *testing.T) {
+	beta := true
+	config := &generator.ClientsConfig{
+		Clients: []*generator.Client{
+			{Name: "Beta App", Beta: &beta, Targets: []string{"Windows"}, Types: []string{"Native"}},
+		},
+		Targets: []*generator.TargetGroup{
+			{
+				Display: "💻 Desktop",
+				Has:     []*generator.Target{{Name: "Windows", Mapped: "Windows"}},
+			},
+		},
+		Types: generator.ClientTypes{
+			&generator.ClientType{Key: "Native", Badge: "native", Section: true},
+			&generator.ClientType{Key: generator.BetaTypeKey, Badge: "⚒️"},
+		},
+	}
+
+	got, err := renderMarkdownDocument(config)
+	if err != nil {
+		t.Fatalf("renderMarkdownDocument() error = %v", err)
+	}
+
+	// Kramdown does not treat padded backticks as code, which breaks GitHub Pages tables.
+	if !strings.Contains(got, "`⚒️`") || strings.Contains(got, "` ⚒️ `") {
+		t.Fatalf("badges should be rendered as unpadded code:\n%s", got)
 	}
 }
 

@@ -341,7 +341,7 @@ func table(plugins []Plugin) string {
 	for _, plugin := range plugins {
 		name := plugin.Name
 		if plugin.Beta {
-			name += " ` ⚒️ `"
+			name += " `⚒️`"
 		}
 		oss := "❌"
 		if plugin.OSS != "" {

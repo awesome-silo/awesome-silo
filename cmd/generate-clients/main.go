@@ -181,7 +181,7 @@ func renderMarkdownDocument(config *generator.ClientsConfig) (string, error) {
 		}
 		badgeLegend.Append(generator.NewHorizontal(
 			generator.NewText(clientType.String(), generator.Bold),
-			generator.NewCode(clientType.Badge, generator.CodePadded),
+			generator.NewCode(clientType.Badge),
 		))
 	}
 	if len(badgeLegend) > 0 {
@@ -218,7 +218,7 @@ func printClientTableWithoutClassificationBadges(
 		name := generator.NewHorizontal(generator.NewText(client.Name))
 		if generator.Deref(client.Beta) {
 			if betaType, ok := config.Types.FindType(generator.BetaTypeKey); ok && betaType.Badge != "" {
-				name.Append(generator.NewCode(betaType.Badge, generator.CodePadded))
+				name.Append(generator.NewCode(betaType.Badge))
 			}
 		}
 		for _, clientType := range client.Types {
@@ -226,7 +226,7 @@ func printClientTableWithoutClassificationBadges(
 				continue
 			}
 			if t, ok := config.Types.FindType(clientType); ok && t.Badge != "" {
-				name.Append(generator.NewCode(t.Badge, generator.CodePadded))
+				name.Append(generator.NewCode(t.Badge))
 			}
 		}
 

@@ -26,8 +26,8 @@ To make changes, please edit those YAML files instead.
 
 | Name | Official | OSS | Free | Paid | Downloads |
 | ---- | -------- | --- | ---- | ---- | --------- |
-| [granary ` ⚒️ `](https://github.com/JoKerIsCraZy/granary) | ❌ | ✅ | ✅ | ❎ | [![github](https://img.shields.io/github/downloads/JoKerIsCraZy/granary/total?logo=github&label=GitHub)](https://github.com/JoKerIsCraZy/granary/releases) |
-| [silage ` ⚒️ `](https://github.com/evman/silage) | ❌ | ✅ | ✅ | ❎ | [![github](https://img.shields.io/github/downloads/evman/silage/total?logo=github&label=GitHub)](https://github.com/evman/silage/releases) |
+| [granary `⚒️`](https://github.com/JoKerIsCraZy/granary) | ❌ | ✅ | ✅ | ❎ | [![github](https://img.shields.io/github/downloads/JoKerIsCraZy/granary/total?logo=github&label=GitHub)](https://github.com/JoKerIsCraZy/granary/releases) |
+| [silage `⚒️`](https://github.com/evman/silage) | ❌ | ✅ | ✅ | ❎ | [![github](https://img.shields.io/github/downloads/evman/silage/total?logo=github&label=GitHub)](https://github.com/evman/silage/releases) |
 
 
 ### macOS
@@ -41,7 +41,7 @@ To make changes, please edit those YAML files instead.
 
 | Name | Official | OSS | Free | Paid | Downloads |
 | ---- | -------- | --- | ---- | ---- | --------- |
-| [silage ` ⚒️ `](https://github.com/evman/silage) | ❌ | ✅ | ✅ | ❎ | [![github](https://img.shields.io/github/downloads/evman/silage/total?logo=github&label=GitHub)](https://github.com/evman/silage/releases) |
+| [silage `⚒️`](https://github.com/evman/silage) | ❌ | ✅ | ✅ | ❎ | [![github](https://img.shields.io/github/downloads/evman/silage/total?logo=github&label=GitHub)](https://github.com/evman/silage/releases) |
 
 
 ## 📱 Mobile
@@ -67,7 +67,7 @@ To make changes, please edit those YAML files instead.
 
 | Name | Official | OSS | Free | Paid | Downloads |
 | ---- | -------- | --- | ---- | ---- | --------- |
-| [Bale ` ⚒️ `](https://github.com/Zorro92/bale-for-silo) | ❌ | ✅ | ✅ | ❎ | [![github](https://img.shields.io/github/downloads/Zorro92/bale-for-silo/total?logo=github&label=GitHub)](https://github.com/Zorro92/bale-for-silo/releases) |
+| [Bale `⚒️`](https://github.com/Zorro92/bale-for-silo) | ❌ | ✅ | ✅ | ❎ | [![github](https://img.shields.io/github/downloads/Zorro92/bale-for-silo/total?logo=github&label=GitHub)](https://github.com/Zorro92/bale-for-silo/releases) |
 
 
 ## 📺 TV
@@ -83,7 +83,7 @@ To make changes, please edit those YAML files instead.
 
 | Name | Official | OSS | Free | Paid | Downloads |
 | ---- | -------- | --- | ---- | ---- | --------- |
-| [a Kodi build  ` ⚒️ `](https://github.com/Pedrod86/Relay-Media-silo-build) | ❌ | ✅ | ✅ | ❎ | [![github](https://img.shields.io/github/downloads/Pedrod86/Relay-Media-silo-build/total?logo=github&label=GitHub)](https://github.com/Pedrod86/Relay-Media-silo-build/releases) |
+| [a Kodi build  `⚒️`](https://github.com/Pedrod86/Relay-Media-silo-build) | ❌ | ✅ | ✅ | ❎ | [![github](https://img.shields.io/github/downloads/Pedrod86/Relay-Media-silo-build/total?logo=github&label=GitHub)](https://github.com/Pedrod86/Relay-Media-silo-build/releases) |
 
 
 ### Roku
@@ -97,7 +97,7 @@ To make changes, please edit those YAML files instead.
 
 | Name | Official | OSS | Free | Paid | Downloads |
 | ---- | -------- | --- | ---- | ---- | --------- |
-| [silo-webos for LG TVs ` ⚒️ `](https://github.com/clacksy/silo-webos) | ❌ | ✅ | ✅ | ❎ | [![LG](https://img.shields.io/badge/LG-grey?logo=LG&label=)](https://github.com/clacksy/silo-webos) |
+| [silo-webos for LG TVs `⚒️`](https://github.com/clacksy/silo-webos) | ❌ | ✅ | ✅ | ❎ | [![LG](https://img.shields.io/badge/LG-grey?logo=LG&label=)](https://github.com/clacksy/silo-webos) |
 
 
 # Compatible
@@ -106,9 +106,9 @@ To make changes, please edit those YAML files instead.
 
 | Name | Official | OSS | Free | Paid | Downloads |
 | ---- | -------- | --- | ---- | ---- | --------- |
-| [Aperture ` ⚒️ `](https://github.com/akhilmulpurii/aperture) | ❌ | ✅ | ✅ | ❎ | [![github](https://img.shields.io/github/downloads/akhilmulpurii/aperture/total?logo=github&label=GitHub)](https://github.com/akhilmulpurii/aperture/releases) |
+| [Aperture `⚒️`](https://github.com/akhilmulpurii/aperture) | ❌ | ✅ | ✅ | ❎ | [![github](https://img.shields.io/github/downloads/akhilmulpurii/aperture/total?logo=github&label=GitHub)](https://github.com/akhilmulpurii/aperture/releases) |
 | [Fladder](https://github.com/DonutWare/Fladder) | ❌ | ✅ | ✅ | ❎ | [![github](https://img.shields.io/github/downloads/DonutWare/Fladder/total?logo=github&label=GitHub)](https://github.com/DonutWare/Fladder/releases) [![Google Play](https://img.shields.io/badge/Google%20Play-grey?logo=Google+Play&label=)](https://play.google.com/store/apps/details?id=nl.jknaapen.fladder) [![flathub](https://img.shields.io/flathub/downloads/nl.jknaapen.fladder?logo=Flathub&label=Flathub)](https://flathub.org/apps/nl.jknaapen.fladder) |
-| [Jellyfin Vue ` ⚒️ `](https://github.com/jellyfin/jellyfin-vue) | ❌ | ✅ | ✅ | ❎ | [![github](https://img.shields.io/github/downloads/jellyfin/jellyfin-vue/total?logo=github&label=GitHub)](https://github.com/jellyfin/jellyfin-vue/actions/workflows/release.yml) [![Demo](https://img.shields.io/badge/Web-blue?logo=&label=Demo)](https://jf-vue.pages.dev/) |
+| [Jellyfin Vue `⚒️`](https://github.com/jellyfin/jellyfin-vue) | ❌ | ✅ | ✅ | ❎ | [![github](https://img.shields.io/github/downloads/jellyfin/jellyfin-vue/total?logo=github&label=GitHub)](https://github.com/jellyfin/jellyfin-vue/actions/workflows/release.yml) [![Demo](https://img.shields.io/badge/Web-blue?logo=&label=Demo)](https://jf-vue.pages.dev/) |
 | [Jellyfin Web](https://github.com/jellyfin/jellyfin-web) | ✅ | ✅ | ✅ | ❎ | [![github](https://img.shields.io/github/downloads/jellyfin/jellyfin-web/total?logo=github&label=GitHub)](https://github.com/jellyfin/jellyfin-web/releases) |
 | [Jellyflix](https://github.com/jellyflix-app/jellyflix) | ❌ | ✅ | ✅ | ❎ | [![Demo](https://img.shields.io/badge/Web-blue?logo=&label=Demo)](https://jellyflix.kiejon.com/) [![App Store](https://img.shields.io/badge/App%20Store-grey?logo=App+Store&label=)](https://apps.apple.com/app/id6476043683) [![github](https://img.shields.io/github/downloads/jellyflix-app/jellyflix/total?logo=github&label=GitHub)](https://github.com/jellyflix-app/jellyflix/releases) |
 | [Pelagica](https://pelagica.app/) | ❌ | ✅ | ✅ | ❎ | [![docker](https://img.shields.io/docker/pulls/kartoffelchipss/pelagica?logo=docker&label=Docker)](https://hub.docker.com/r/kartoffelchipss/pelagica) [![App Store](https://img.shields.io/badge/App%20Store-grey?logo=App+Store&label=)](https://apps.apple.com/app/id6811079730) [![github](https://img.shields.io/github/downloads/PelagicaApp/pelagica/total?logo=github&label=GitHub)](https://github.com/PelagicaApp/pelagica/releases) [![Demo](https://img.shields.io/badge/Web-blue?logo=&label=Demo)](https://demo.pelagica.app/) |
@@ -120,29 +120,29 @@ To make changes, please edit those YAML files instead.
 
 | Name | Official | OSS | Free | Paid | Downloads |
 | ---- | -------- | --- | ---- | ---- | --------- |
-| [Blink ` ⚒️ `](https://github.com/prayag17/Blink) | ❌ | ✅ | ✅ | ❎ | [![github](https://img.shields.io/github/downloads/prayag17/Blink/total?logo=github&label=GitHub)](https://github.com/prayag17/Blink/releases) |
+| [Blink `⚒️`](https://github.com/prayag17/Blink) | ❌ | ✅ | ✅ | ❎ | [![github](https://img.shields.io/github/downloads/prayag17/Blink/total?logo=github&label=GitHub)](https://github.com/prayag17/Blink/releases) |
 | [Fladder](https://github.com/DonutWare/Fladder) | ❌ | ✅ | ✅ | ❎ | [![github](https://img.shields.io/github/downloads/DonutWare/Fladder/total?logo=github&label=GitHub)](https://github.com/DonutWare/Fladder/releases) [![Google Play](https://img.shields.io/badge/Google%20Play-grey?logo=Google+Play&label=)](https://play.google.com/store/apps/details?id=nl.jknaapen.fladder) [![flathub](https://img.shields.io/flathub/downloads/nl.jknaapen.fladder?logo=Flathub&label=Flathub)](https://flathub.org/apps/nl.jknaapen.fladder) |
-| [FluentFin ` ⚒️ `](https://github.com/insomniachi/FluentFin) | ❌ | ✅ | ✅ | ❎ | [![github](https://img.shields.io/github/downloads/insomniachi/FluentFin/total?logo=github&label=GitHub)](https://github.com/insomniachi/FluentFin/releases) |
+| [FluentFin `⚒️`](https://github.com/insomniachi/FluentFin) | ❌ | ✅ | ✅ | ❎ | [![github](https://img.shields.io/github/downloads/insomniachi/FluentFin/total?logo=github&label=GitHub)](https://github.com/insomniachi/FluentFin/releases) |
 | [Hills](https://play.google.com/store/apps/details?id=com.mountains.hills) | ❌ | ❌ | ✅ | ☑️ | [![Google Play](https://img.shields.io/badge/Google%20Play-grey?logo=Google+Play&label=)](https://play.google.com/store/apps/details?id=com.mountains.hills) [![Microsoft Store](https://img.shields.io/badge/-grey?logo=&label=Microsoft+Store)](https://apps.microsoft.com/detail/9NXNZFRLLWZX) |
 | [iPlay](https://github.com/saltpi/iPlay) | ❌ | ✅ | ✅ | ❎ | [![github](https://img.shields.io/github/downloads/saltpi/iPlay/total?logo=github&label=GitHub)](https://github.com/saltpi/iPlay/releases) [![App Store](https://img.shields.io/badge/App%20Store-grey?logo=App+Store&label=)](https://apps.apple.com/app/id6480576133) [![Amazon](https://img.shields.io/badge/Amazon-grey?logo=Amazon&label=)](https://www.amazon.com/gp/product/B0DB2KL58G) [![Microsoft Store](https://img.shields.io/badge/-grey?logo=&label=Microsoft+Store)](https://apps.microsoft.com/detail/9NBZ2BXD4WFZ) |
-| [Jellium Desktop ` ⚒️ `](https://github.com/andrewrabert/jellium-desktop) | ❌ | ✅ | ✅ | ❎ | [![github](https://img.shields.io/github/downloads/andrewrabert/jellium-desktop/total?logo=github&label=GitHub)](https://github.com/andrewrabert/jellium-desktop/releases) |
+| [Jellium Desktop `⚒️`](https://github.com/andrewrabert/jellium-desktop) | ❌ | ✅ | ✅ | ❎ | [![github](https://img.shields.io/github/downloads/andrewrabert/jellium-desktop/total?logo=github&label=GitHub)](https://github.com/andrewrabert/jellium-desktop/releases) |
 | [Jellyfin MPV Shim](https://github.com/jellyfin/jellyfin-mpv-shim) | ❌ | ✅ | ✅ | ❎ | [![github](https://img.shields.io/github/downloads/jellyfin/jellyfin-mpv-shim/total?logo=github&label=GitHub)](https://github.com/jellyfin/jellyfin-mpv-shim/releases) [![flathub](https://img.shields.io/flathub/downloads/com.github.iwalton3.jellyfin-mpv-shim?logo=Flathub&label=Flathub)](https://flathub.org/apps/com.github.iwalton3.jellyfin-mpv-shim) |
 | [Jellyflix](https://github.com/jellyflix-app/jellyflix) | ❌ | ✅ | ✅ | ❎ | [![Demo](https://img.shields.io/badge/Web-blue?logo=&label=Demo)](https://jellyflix.kiejon.com/) [![App Store](https://img.shields.io/badge/App%20Store-grey?logo=App+Store&label=)](https://apps.apple.com/app/id6476043683) [![github](https://img.shields.io/github/downloads/jellyflix-app/jellyflix/total?logo=github&label=GitHub)](https://github.com/jellyflix-app/jellyflix/releases) |
 | [Pelagica](https://pelagica.app/) | ❌ | ✅ | ✅ | ❎ | [![docker](https://img.shields.io/docker/pulls/kartoffelchipss/pelagica?logo=docker&label=Docker)](https://hub.docker.com/r/kartoffelchipss/pelagica) [![App Store](https://img.shields.io/badge/App%20Store-grey?logo=App+Store&label=)](https://apps.apple.com/app/id6811079730) [![github](https://img.shields.io/github/downloads/PelagicaApp/pelagica/total?logo=github&label=GitHub)](https://github.com/PelagicaApp/pelagica/releases) [![Demo](https://img.shields.io/badge/Web-blue?logo=&label=Demo)](https://demo.pelagica.app/) |
 | [Rodel Player](https://apps.microsoft.com/detail/9nb0h051m4v4) | ❌ | ❌ | ✅ | ❎ | [![Microsoft Store](https://img.shields.io/badge/-grey?logo=&label=Microsoft+Store)](https://apps.microsoft.com/detail/9nb0h051m4v4) |
-| [Switchfin ` ⚒️ `](https://github.com/dragonflylee/switchfin) | ❌ | ✅ | ✅ | ❎ | [![github](https://img.shields.io/github/downloads/dragonflylee/switchfin/total?logo=github&label=GitHub)](https://github.com/dragonflylee/switchfin/releases) |
+| [Switchfin `⚒️`](https://github.com/dragonflylee/switchfin) | ❌ | ✅ | ✅ | ❎ | [![github](https://img.shields.io/github/downloads/dragonflylee/switchfin/total?logo=github&label=GitHub)](https://github.com/dragonflylee/switchfin/releases) |
 
 
 ### macOS
 
 | Name | Official | OSS | Free | Paid | Downloads |
 | ---- | -------- | --- | ---- | ---- | --------- |
-| [Blink ` ⚒️ `](https://github.com/prayag17/Blink) | ❌ | ✅ | ✅ | ❎ | [![github](https://img.shields.io/github/downloads/prayag17/Blink/total?logo=github&label=GitHub)](https://github.com/prayag17/Blink/releases) |
+| [Blink `⚒️`](https://github.com/prayag17/Blink) | ❌ | ✅ | ✅ | ❎ | [![github](https://img.shields.io/github/downloads/prayag17/Blink/total?logo=github&label=GitHub)](https://github.com/prayag17/Blink/releases) |
 | [Fladder](https://github.com/DonutWare/Fladder) | ❌ | ✅ | ✅ | ❎ | [![github](https://img.shields.io/github/downloads/DonutWare/Fladder/total?logo=github&label=GitHub)](https://github.com/DonutWare/Fladder/releases) [![Google Play](https://img.shields.io/badge/Google%20Play-grey?logo=Google+Play&label=)](https://play.google.com/store/apps/details?id=nl.jknaapen.fladder) [![flathub](https://img.shields.io/flathub/downloads/nl.jknaapen.fladder?logo=Flathub&label=Flathub)](https://flathub.org/apps/nl.jknaapen.fladder) |
 | [HamHub](https://www.hamhub.app/) | ❌ | ❌ | ✅ | ❎ | [![App Store](https://img.shields.io/badge/App%20Store-grey?logo=App+Store&label=)](https://apps.apple.com/app/id6458691598) |
 | [Infuse](https://firecore.com/infuse) | ❌ | ❌ | ✅ | ☑️ | [![App Store](https://img.shields.io/badge/App%20Store-grey?logo=App+Store&label=)](https://apps.apple.com/app/id1136220934) |
 | [iPlay](https://github.com/saltpi/iPlay) | ❌ | ✅ | ✅ | ❎ | [![github](https://img.shields.io/github/downloads/saltpi/iPlay/total?logo=github&label=GitHub)](https://github.com/saltpi/iPlay/releases) [![App Store](https://img.shields.io/badge/App%20Store-grey?logo=App+Store&label=)](https://apps.apple.com/app/id6480576133) [![Amazon](https://img.shields.io/badge/Amazon-grey?logo=Amazon&label=)](https://www.amazon.com/gp/product/B0DB2KL58G) [![Microsoft Store](https://img.shields.io/badge/-grey?logo=&label=Microsoft+Store)](https://apps.microsoft.com/detail/9NBZ2BXD4WFZ) |
-| [Jellium Desktop ` ⚒️ `](https://github.com/andrewrabert/jellium-desktop) | ❌ | ✅ | ✅ | ❎ | [![github](https://img.shields.io/github/downloads/andrewrabert/jellium-desktop/total?logo=github&label=GitHub)](https://github.com/andrewrabert/jellium-desktop/releases) |
+| [Jellium Desktop `⚒️`](https://github.com/andrewrabert/jellium-desktop) | ❌ | ✅ | ✅ | ❎ | [![github](https://img.shields.io/github/downloads/andrewrabert/jellium-desktop/total?logo=github&label=GitHub)](https://github.com/andrewrabert/jellium-desktop/releases) |
 | [Jellyfin MPV Shim](https://github.com/jellyfin/jellyfin-mpv-shim) | ❌ | ✅ | ✅ | ❎ | [![github](https://img.shields.io/github/downloads/jellyfin/jellyfin-mpv-shim/total?logo=github&label=GitHub)](https://github.com/jellyfin/jellyfin-mpv-shim/releases) [![flathub](https://img.shields.io/flathub/downloads/com.github.iwalton3.jellyfin-mpv-shim?logo=Flathub&label=Flathub)](https://flathub.org/apps/com.github.iwalton3.jellyfin-mpv-shim) |
 | [Jellyflix](https://github.com/jellyflix-app/jellyflix) | ❌ | ✅ | ✅ | ❎ | [![Demo](https://img.shields.io/badge/Web-blue?logo=&label=Demo)](https://jellyflix.kiejon.com/) [![App Store](https://img.shields.io/badge/App%20Store-grey?logo=App+Store&label=)](https://apps.apple.com/app/id6476043683) [![github](https://img.shields.io/github/downloads/jellyflix-app/jellyflix/total?logo=github&label=GitHub)](https://github.com/jellyflix-app/jellyflix/releases) |
 | [LiveFin](https://livefin.github.io/web/) | ❌ | ✅ | ✅ | ❎ | [![App Store](https://img.shields.io/badge/App%20Store-grey?logo=App+Store&label=)](https://apps.apple.com/app/id6748318433) |
@@ -151,7 +151,7 @@ To make changes, please edit those YAML files instead.
 | [SenPlayer](https://apps.apple.com/app/id6443975850) | ❌ | ❌ | ✅ | ☑️ | [![App Store](https://img.shields.io/badge/App%20Store-grey?logo=App+Store&label=)](https://apps.apple.com/app/id6443975850) |
 | [Spectati](https://spectati.com) | ❌ | ❌ | ✅ | ☑️ | [![App Store](https://img.shields.io/badge/App%20Store-grey?logo=App+Store&label=)](https://apps.apple.com/app/id6767241047) |
 | [Strimr](https://github.com/wunax/strimr) | ❌ | ✅ | ✅ | ❎ | [![App Store](https://img.shields.io/badge/App%20Store-grey?logo=App+Store&label=)](https://apps.apple.com/app/id6757491271) |
-| [Switchfin ` ⚒️ `](https://github.com/dragonflylee/switchfin) | ❌ | ✅ | ✅ | ❎ | [![github](https://img.shields.io/github/downloads/dragonflylee/switchfin/total?logo=github&label=GitHub)](https://github.com/dragonflylee/switchfin/releases) |
+| [Switchfin `⚒️`](https://github.com/dragonflylee/switchfin) | ❌ | ✅ | ✅ | ❎ | [![github](https://img.shields.io/github/downloads/dragonflylee/switchfin/total?logo=github&label=GitHub)](https://github.com/dragonflylee/switchfin/releases) |
 | [VidHub](https://okaapps.com/product/1659622164) | ❌ | ❌ | ✅ | ☑️ | [![Google Play](https://img.shields.io/badge/Google%20Play-grey?logo=Google+Play&label=)](https://play.google.com/store/apps/details?id=com.oumi.utility.media.hub) [![App Store](https://img.shields.io/badge/App%20Store-grey?logo=App+Store&label=)](https://apps.apple.com/app/id1659622164) |
 
 
@@ -159,15 +159,15 @@ To make changes, please edit those YAML files instead.
 
 | Name | Official | OSS | Free | Paid | Downloads |
 | ---- | -------- | --- | ---- | ---- | --------- |
-| [Blink ` ⚒️ `](https://github.com/prayag17/Blink) | ❌ | ✅ | ✅ | ❎ | [![github](https://img.shields.io/github/downloads/prayag17/Blink/total?logo=github&label=GitHub)](https://github.com/prayag17/Blink/releases) |
-| [Delfin ` ⚒️ `](https://codeberg.org/avery42/delfin) | ❌ | ✅ | ✅ | ❎ | [![flathub](https://img.shields.io/flathub/downloads/cafe.avery.Delfin?logo=Flathub&label=Flathub)](https://flathub.org/apps/cafe.avery.Delfin) |
+| [Blink `⚒️`](https://github.com/prayag17/Blink) | ❌ | ✅ | ✅ | ❎ | [![github](https://img.shields.io/github/downloads/prayag17/Blink/total?logo=github&label=GitHub)](https://github.com/prayag17/Blink/releases) |
+| [Delfin `⚒️`](https://codeberg.org/avery42/delfin) | ❌ | ✅ | ✅ | ❎ | [![flathub](https://img.shields.io/flathub/downloads/cafe.avery.Delfin?logo=Flathub&label=Flathub)](https://flathub.org/apps/cafe.avery.Delfin) |
 | [Fladder](https://github.com/DonutWare/Fladder) | ❌ | ✅ | ✅ | ❎ | [![github](https://img.shields.io/github/downloads/DonutWare/Fladder/total?logo=github&label=GitHub)](https://github.com/DonutWare/Fladder/releases) [![Google Play](https://img.shields.io/badge/Google%20Play-grey?logo=Google+Play&label=)](https://play.google.com/store/apps/details?id=nl.jknaapen.fladder) [![flathub](https://img.shields.io/flathub/downloads/nl.jknaapen.fladder?logo=Flathub&label=Flathub)](https://flathub.org/apps/nl.jknaapen.fladder) |
-| [Jellium Desktop ` ⚒️ `](https://github.com/andrewrabert/jellium-desktop) | ❌ | ✅ | ✅ | ❎ | [![github](https://img.shields.io/github/downloads/andrewrabert/jellium-desktop/total?logo=github&label=GitHub)](https://github.com/andrewrabert/jellium-desktop/releases) |
+| [Jellium Desktop `⚒️`](https://github.com/andrewrabert/jellium-desktop) | ❌ | ✅ | ✅ | ❎ | [![github](https://img.shields.io/github/downloads/andrewrabert/jellium-desktop/total?logo=github&label=GitHub)](https://github.com/andrewrabert/jellium-desktop/releases) |
 | [Jellyfin MPV Shim](https://github.com/jellyfin/jellyfin-mpv-shim) | ❌ | ✅ | ✅ | ❎ | [![github](https://img.shields.io/github/downloads/jellyfin/jellyfin-mpv-shim/total?logo=github&label=GitHub)](https://github.com/jellyfin/jellyfin-mpv-shim/releases) [![flathub](https://img.shields.io/flathub/downloads/com.github.iwalton3.jellyfin-mpv-shim?logo=Flathub&label=Flathub)](https://flathub.org/apps/com.github.iwalton3.jellyfin-mpv-shim) |
 | [Jellyflix](https://github.com/jellyflix-app/jellyflix) | ❌ | ✅ | ✅ | ❎ | [![Demo](https://img.shields.io/badge/Web-blue?logo=&label=Demo)](https://jellyflix.kiejon.com/) [![App Store](https://img.shields.io/badge/App%20Store-grey?logo=App+Store&label=)](https://apps.apple.com/app/id6476043683) [![github](https://img.shields.io/github/downloads/jellyflix-app/jellyflix/total?logo=github&label=GitHub)](https://github.com/jellyflix-app/jellyflix/releases) |
 | [Pelagica](https://pelagica.app/) | ❌ | ✅ | ✅ | ❎ | [![docker](https://img.shields.io/docker/pulls/kartoffelchipss/pelagica?logo=docker&label=Docker)](https://hub.docker.com/r/kartoffelchipss/pelagica) [![App Store](https://img.shields.io/badge/App%20Store-grey?logo=App+Store&label=)](https://apps.apple.com/app/id6811079730) [![github](https://img.shields.io/github/downloads/PelagicaApp/pelagica/total?logo=github&label=GitHub)](https://github.com/PelagicaApp/pelagica/releases) [![Demo](https://img.shields.io/badge/Web-blue?logo=&label=Demo)](https://demo.pelagica.app/) |
-| [Switchfin ` ⚒️ `](https://github.com/dragonflylee/switchfin) | ❌ | ✅ | ✅ | ❎ | [![github](https://img.shields.io/github/downloads/dragonflylee/switchfin/total?logo=github&label=GitHub)](https://github.com/dragonflylee/switchfin/releases) |
-| [tsukimi ` ⚒️ `](https://github.com/tsukinaha/tsukimi) | ❌ | ✅ | ✅ | ❎ | [![github](https://img.shields.io/github/downloads/tsukinaha/tsukimi/total?logo=github&label=GitHub)](https://github.com/tsukinaha/tsukimi/releases) |
+| [Switchfin `⚒️`](https://github.com/dragonflylee/switchfin) | ❌ | ✅ | ✅ | ❎ | [![github](https://img.shields.io/github/downloads/dragonflylee/switchfin/total?logo=github&label=GitHub)](https://github.com/dragonflylee/switchfin/releases) |
+| [tsukimi `⚒️`](https://github.com/tsukinaha/tsukimi) | ❌ | ✅ | ✅ | ❎ | [![github](https://img.shields.io/github/downloads/tsukinaha/tsukimi/total?logo=github&label=GitHub)](https://github.com/tsukinaha/tsukimi/releases) |
 
 
 ## 📱 Mobile
@@ -190,7 +190,7 @@ To make changes, please edit those YAML files instead.
 | [SenPlayer](https://apps.apple.com/app/id6443975850) | ❌ | ❌ | ✅ | ☑️ | [![App Store](https://img.shields.io/badge/App%20Store-grey?logo=App+Store&label=)](https://apps.apple.com/app/id6443975850) |
 | [Spectati](https://spectati.com) | ❌ | ❌ | ✅ | ☑️ | [![App Store](https://img.shields.io/badge/App%20Store-grey?logo=App+Store&label=)](https://apps.apple.com/app/id6767241047) |
 | [Strimr](https://github.com/wunax/strimr) | ❌ | ✅ | ✅ | ❎ | [![App Store](https://img.shields.io/badge/App%20Store-grey?logo=App+Store&label=)](https://apps.apple.com/app/id6757491271) |
-| [Swiftfin ` ⚒️ `](https://github.com/jellyfin/swiftfin) | ❌ | ✅ | ✅ | ❎ | [![App Store](https://img.shields.io/badge/App%20Store-grey?logo=App+Store&label=)](https://apps.apple.com/app/id1604098728) |
+| [Swiftfin `⚒️`](https://github.com/jellyfin/swiftfin) | ❌ | ✅ | ✅ | ❎ | [![App Store](https://img.shields.io/badge/App%20Store-grey?logo=App+Store&label=)](https://apps.apple.com/app/id1604098728) |
 | [VidHub](https://okaapps.com/product/1659622164) | ❌ | ❌ | ✅ | ☑️ | [![Google Play](https://img.shields.io/badge/Google%20Play-grey?logo=Google+Play&label=)](https://play.google.com/store/apps/details?id=com.oumi.utility.media.hub) [![App Store](https://img.shields.io/badge/App%20Store-grey?logo=App+Store&label=)](https://apps.apple.com/app/id1659622164) |
 
 
@@ -198,7 +198,7 @@ To make changes, please edit those YAML files instead.
 
 | Name | Official | OSS | Free | Paid | Downloads |
 | ---- | -------- | --- | ---- | ---- | --------- |
-| [AFinity ` ⚒️ `](https://afinity.vercel.app) | ❌ | ✅ | ✅ | ❎ | [![github](https://img.shields.io/github/downloads/MakD/AFinity/total?logo=github&label=GitHub)](https://github.com/MakD/AFinity/releases) |
+| [AFinity `⚒️`](https://afinity.vercel.app) | ❌ | ✅ | ✅ | ❎ | [![github](https://img.shields.io/github/downloads/MakD/AFinity/total?logo=github&label=GitHub)](https://github.com/MakD/AFinity/releases) |
 | [AfuseKt](https://github.com/AttemptD/AfuseKt-release) | ❌ | ❌ | ✅ | ☑️ | [![github](https://img.shields.io/github/downloads/AttemptD/AfuseKt-release/total?logo=github&label=GitHub)](https://github.com/AttemptD/AfuseKt-release/releases) |
 | [Fladder](https://github.com/DonutWare/Fladder) | ❌ | ✅ | ✅ | ❎ | [![github](https://img.shields.io/github/downloads/DonutWare/Fladder/total?logo=github&label=GitHub)](https://github.com/DonutWare/Fladder/releases) [![Google Play](https://img.shields.io/badge/Google%20Play-grey?logo=Google+Play&label=)](https://play.google.com/store/apps/details?id=nl.jknaapen.fladder) [![flathub](https://img.shields.io/flathub/downloads/nl.jknaapen.fladder?logo=Flathub&label=Flathub)](https://flathub.org/apps/nl.jknaapen.fladder) |
 | [Ghosten-Player](https://github.com/GhostenEditor/Ghosten-Player) | ❌ | ✅ | ✅ | ❎ | [![github](https://img.shields.io/github/downloads/GhostenEditor/Ghosten-Player/total?logo=github&label=GitHub)](https://github.com/GhostenEditor/Ghosten-Player/releases) |
@@ -210,7 +210,7 @@ To make changes, please edit those YAML files instead.
 | [Phyn](https://phyn.app) | ❌ | ❌ | ✅ | ☑️ | [![Google Play](https://img.shields.io/badge/Google%20Play-grey?logo=Google+Play&label=)](https://play.google.com/store/apps/details?id=com.appsynergyts.phyn) [![App Store](https://img.shields.io/badge/App%20Store-grey?logo=App+Store&label=)](https://apps.apple.com/app/id6457674815) |
 | [Sanctumd](https://sanctumd.dpdns.org) | ❌ | ✅ | ✅ | ❎ | [![github](https://img.shields.io/github/downloads/Phioster/sanctum_daemon/total?logo=github&label=GitHub)](https://github.com/Phioster/sanctum_daemon/releases) |
 | [VidHub](https://okaapps.com/product/1659622164) | ❌ | ❌ | ✅ | ☑️ | [![Google Play](https://img.shields.io/badge/Google%20Play-grey?logo=Google+Play&label=)](https://play.google.com/store/apps/details?id=com.oumi.utility.media.hub) [![App Store](https://img.shields.io/badge/App%20Store-grey?logo=App+Store&label=)](https://apps.apple.com/app/id1659622164) |
-| [Void ` ⚒️ `](https://github.com/hritwikjohri/Void-for-jellyfin) | ❌ | ✅ | ✅ | ❎ | [![github](https://img.shields.io/github/downloads/hritwikjohri/Void-for-jellyfin/total?logo=github&label=GitHub)](https://github.com/hritwikjohri/Void-for-jellyfin/releases) [![github](https://img.shields.io/github/downloads/hritwikjohri/VoidTV-for-jellyfin/total?logo=github&label=GitHub)](https://github.com/hritwikjohri/VoidTV-for-jellyfin/releases) |
+| [Void `⚒️`](https://github.com/hritwikjohri/Void-for-jellyfin) | ❌ | ✅ | ✅ | ❎ | [![github](https://img.shields.io/github/downloads/hritwikjohri/Void-for-jellyfin/total?logo=github&label=GitHub)](https://github.com/hritwikjohri/Void-for-jellyfin/releases) [![github](https://img.shields.io/github/downloads/hritwikjohri/VoidTV-for-jellyfin/total?logo=github&label=GitHub)](https://github.com/hritwikjohri/VoidTV-for-jellyfin/releases) |
 | Yamby | ❌ | ❌ | ✅ | ☑️ | [![Google Play](https://img.shields.io/badge/Google%20Play-grey?logo=Google+Play&label=)](https://play.google.com/store/apps/details?id=com.hush.yamby) |
 
 
@@ -234,23 +234,23 @@ To make changes, please edit those YAML files instead.
 
 | Name | Official | OSS | Free | Paid | Downloads |
 | ---- | -------- | --- | ---- | ---- | --------- |
-| [Switchfin ` ⚒️ `](https://github.com/dragonflylee/switchfin) | ❌ | ✅ | ✅ | ❎ | [![github](https://img.shields.io/github/downloads/dragonflylee/switchfin/total?logo=github&label=GitHub)](https://github.com/dragonflylee/switchfin/releases) |
+| [Switchfin `⚒️`](https://github.com/dragonflylee/switchfin) | ❌ | ✅ | ✅ | ❎ | [![github](https://img.shields.io/github/downloads/dragonflylee/switchfin/total?logo=github&label=GitHub)](https://github.com/dragonflylee/switchfin/releases) |
 
 
 ### Xbox
 
 | Name | Official | OSS | Free | Paid | Downloads |
 | ---- | -------- | --- | ---- | ---- | --------- |
-| [Jellyfin for Xbox ` ⚒️ `](https://github.com/jellyfin/jellyfin-xbox) | ❌ | ✅ | ✅ | ❎ | [![github](https://img.shields.io/github/downloads/jellyfin/jellyfin-xbox/total?logo=github&label=GitHub)](https://github.com/jellyfin/jellyfin-xbox/releases) |
-| [Switchfin ` ⚒️ `](https://github.com/dragonflylee/switchfin) | ❌ | ✅ | ✅ | ❎ | [![github](https://img.shields.io/github/downloads/dragonflylee/switchfin/total?logo=github&label=GitHub)](https://github.com/dragonflylee/switchfin/releases) |
+| [Jellyfin for Xbox `⚒️`](https://github.com/jellyfin/jellyfin-xbox) | ❌ | ✅ | ✅ | ❎ | [![github](https://img.shields.io/github/downloads/jellyfin/jellyfin-xbox/total?logo=github&label=GitHub)](https://github.com/jellyfin/jellyfin-xbox/releases) |
+| [Switchfin `⚒️`](https://github.com/dragonflylee/switchfin) | ❌ | ✅ | ✅ | ❎ | [![github](https://img.shields.io/github/downloads/dragonflylee/switchfin/total?logo=github&label=GitHub)](https://github.com/dragonflylee/switchfin/releases) |
 
 
 ### PlayStation
 
 | Name | Official | OSS | Free | Paid | Downloads |
 | ---- | -------- | --- | ---- | ---- | --------- |
-| [Movian Jellyfin ` ⚒️ `](https://github.com/LouisMarotta/m7-jellyfin) | ❌ | ✅ | ✅ | ❎ | [![github](https://img.shields.io/github/downloads/LouisMarotta/m7-jellyfin/total?logo=github&label=GitHub)](https://github.com/LouisMarotta/m7-jellyfin/releases) |
-| [Switchfin ` ⚒️ `](https://github.com/dragonflylee/switchfin) | ❌ | ✅ | ✅ | ❎ | [![github](https://img.shields.io/github/downloads/dragonflylee/switchfin/total?logo=github&label=GitHub)](https://github.com/dragonflylee/switchfin/releases) |
+| [Movian Jellyfin `⚒️`](https://github.com/LouisMarotta/m7-jellyfin) | ❌ | ✅ | ✅ | ❎ | [![github](https://img.shields.io/github/downloads/LouisMarotta/m7-jellyfin/total?logo=github&label=GitHub)](https://github.com/LouisMarotta/m7-jellyfin/releases) |
+| [Switchfin `⚒️`](https://github.com/dragonflylee/switchfin) | ❌ | ✅ | ✅ | ❎ | [![github](https://img.shields.io/github/downloads/dragonflylee/switchfin/total?logo=github&label=GitHub)](https://github.com/dragonflylee/switchfin/releases) |
 
 
 ## 📺 TV
@@ -271,7 +271,7 @@ To make changes, please edit those YAML files instead.
 | [SenPlayer](https://apps.apple.com/app/id6443975850) | ❌ | ❌ | ✅ | ☑️ | [![App Store](https://img.shields.io/badge/App%20Store-grey?logo=App+Store&label=)](https://apps.apple.com/app/id6443975850) |
 | [Spectati](https://spectati.com) | ❌ | ❌ | ✅ | ☑️ | [![App Store](https://img.shields.io/badge/App%20Store-grey?logo=App+Store&label=)](https://apps.apple.com/app/id6767241047) |
 | [Strimr](https://github.com/wunax/strimr) | ❌ | ✅ | ✅ | ❎ | [![App Store](https://img.shields.io/badge/App%20Store-grey?logo=App+Store&label=)](https://apps.apple.com/app/id6757491271) |
-| [Swiftfin ` ⚒️ `](https://github.com/jellyfin/swiftfin) | ❌ | ✅ | ✅ | ❎ | [![App Store](https://img.shields.io/badge/App%20Store-grey?logo=App+Store&label=)](https://apps.apple.com/app/id1604098728) |
+| [Swiftfin `⚒️`](https://github.com/jellyfin/swiftfin) | ❌ | ✅ | ✅ | ❎ | [![App Store](https://img.shields.io/badge/App%20Store-grey?logo=App+Store&label=)](https://apps.apple.com/app/id1604098728) |
 | [VidHub](https://okaapps.com/product/1659622164) | ❌ | ❌ | ✅ | ☑️ | [![Google Play](https://img.shields.io/badge/Google%20Play-grey?logo=Google+Play&label=)](https://play.google.com/store/apps/details?id=com.oumi.utility.media.hub) [![App Store](https://img.shields.io/badge/App%20Store-grey?logo=App+Store&label=)](https://apps.apple.com/app/id1659622164) |
 
 
@@ -286,7 +286,7 @@ To make changes, please edit those YAML files instead.
 | [Jellyfin for Android TV](https://github.com/jellyfin/jellyfin-androidtv) | ❌ | ✅ | ✅ | ❎ | [![Amazon](https://img.shields.io/badge/Amazon-grey?logo=Amazon&label=)](https://www.amazon.com/gp/aw/d/B07TX7Z725) [![Google Play](https://img.shields.io/badge/Google%20Play-grey?logo=Google+Play&label=)](https://play.google.com/store/apps/details?id=org.jellyfin.androidtv) |
 | [Sanctumd](https://sanctumd.dpdns.org) | ❌ | ✅ | ✅ | ❎ | [![github](https://img.shields.io/github/downloads/Phioster/sanctum_daemon/total?logo=github&label=GitHub)](https://github.com/Phioster/sanctum_daemon/releases) |
 | [VidHub](https://okaapps.com/product/1659622164) | ❌ | ❌ | ✅ | ☑️ | [![Google Play](https://img.shields.io/badge/Google%20Play-grey?logo=Google+Play&label=)](https://play.google.com/store/apps/details?id=com.oumi.utility.media.hub) [![App Store](https://img.shields.io/badge/App%20Store-grey?logo=App+Store&label=)](https://apps.apple.com/app/id1659622164) |
-| [Void ` ⚒️ `](https://github.com/hritwikjohri/Void-for-jellyfin) | ❌ | ✅ | ✅ | ❎ | [![github](https://img.shields.io/github/downloads/hritwikjohri/Void-for-jellyfin/total?logo=github&label=GitHub)](https://github.com/hritwikjohri/Void-for-jellyfin/releases) [![github](https://img.shields.io/github/downloads/hritwikjohri/VoidTV-for-jellyfin/total?logo=github&label=GitHub)](https://github.com/hritwikjohri/VoidTV-for-jellyfin/releases) |
+| [Void `⚒️`](https://github.com/hritwikjohri/Void-for-jellyfin) | ❌ | ✅ | ✅ | ❎ | [![github](https://img.shields.io/github/downloads/hritwikjohri/Void-for-jellyfin/total?logo=github&label=GitHub)](https://github.com/hritwikjohri/Void-for-jellyfin/releases) [![github](https://img.shields.io/github/downloads/hritwikjohri/VoidTV-for-jellyfin/total?logo=github&label=GitHub)](https://github.com/hritwikjohri/VoidTV-for-jellyfin/releases) |
 | Yamby | ❌ | ❌ | ✅ | ☑️ | [![Google Play](https://img.shields.io/badge/Google%20Play-grey?logo=Google+Play&label=)](https://play.google.com/store/apps/details?id=com.hush.yamby) |
 
 
@@ -320,7 +320,7 @@ To make changes, please edit those YAML files instead.
 
 | Name | Official | OSS | Free | Paid | Downloads |
 | ---- | -------- | --- | ---- | ---- | --------- |
-| [Breezyfin ` ⚒️ `](https://github.com/botagas/Breezyfin) | ❌ | ✅ | ✅ | ❎ | [![github](https://img.shields.io/github/downloads/botagas/Breezyfin/total?logo=github&label=GitHub)](https://github.com/botagas/Breezyfin/releases) |
+| [Breezyfin `⚒️`](https://github.com/botagas/Breezyfin) | ❌ | ✅ | ✅ | ❎ | [![github](https://img.shields.io/github/downloads/botagas/Breezyfin/total?logo=github&label=GitHub)](https://github.com/botagas/Breezyfin/releases) |
 | [Jellyfin for WebOS](https://github.com/jellyfin/jellyfin-webos) | ❌ | ✅ | ✅ | ❎ | [![LG](https://img.shields.io/badge/LG-grey?logo=LG&label=)](https://us.lgappstv.com/main/tvapp/detail?appId=1030579) |
 | [Litefin](https://github.com/MoazSalem/litefin) | ❌ | ✅ | ✅ | ❎ | [![github](https://img.shields.io/github/downloads/MoazSalem/litefin/total?logo=github&label=GitHub)](https://github.com/MoazSalem/litefin/releases) |
 | [Pelagica](https://pelagica.app/) | ❌ | ✅ | ✅ | ❎ | [![docker](https://img.shields.io/docker/pulls/kartoffelchipss/pelagica?logo=docker&label=Docker)](https://hub.docker.com/r/kartoffelchipss/pelagica) [![App Store](https://img.shields.io/badge/App%20Store-grey?logo=App+Store&label=)](https://apps.apple.com/app/id6811079730) [![github](https://img.shields.io/github/downloads/PelagicaApp/pelagica/total?logo=github&label=GitHub)](https://github.com/PelagicaApp/pelagica/releases) [![Demo](https://img.shields.io/badge/Web-blue?logo=&label=Demo)](https://demo.pelagica.app/) |
@@ -328,8 +328,8 @@ To make changes, please edit those YAML files instead.
 
 ---
 
-* **Beta** ` ⚒️ `
-* **Reader** ` 📖 `
+* **Beta** `⚒️`
+* **Reader** `📖`
 
 
 ---
