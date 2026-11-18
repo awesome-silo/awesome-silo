@@ -1,12 +1,10 @@
 <!--lint disable awesome-heading awesome-toc double-link-->
 
-<img src="/assets/banner.png" />
+<img src="assets/banner.png" />
 <blockquote align="center"> A List of Awesome Silo add-ons</blockquote>
 
 <p align="center">
 [
-  <a href="#-plugins">Plugins</a> •
-  <a href="#-companion-apps--tools">Companion Apps & Tools</a> •
   <a href="#-guides">Guides</a> •
   <a href="#-snippets">Snippets</a> •
   <a href="#-related">Related</a> •
@@ -14,20 +12,9 @@
 ]
 </p>
 
-<table width="500px" align="center">
-  <tr>
-    <th width="250px" align="center">
-      <h3><a href="CLIENTS.md">📺 Clients</a></h3>
-      Browse available clients for all platforms<br />
-      <img width="1" height="10" />
-    </th>
-    <th width="250px" align="center">
-      <h3><a href="PLUGINS.md">🧩 Plugins</a></h3>
-      Browse available plugins<br />
-      <img width="1" height="10" />
-    </th>
-  </tr>
-</table>
+| [📺 Clients](CLIENTS.md) | [🧩 Plugins](PLUGINS.md) |
+| :----------------------: | :----------------------: |
+| Browse available clients for all platforms | Browse available plugins |
 
 ### 📜 Snippets
 

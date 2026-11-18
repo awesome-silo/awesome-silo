@@ -118,7 +118,6 @@ These plugins implement functionality outside Silo's supported scope. Silo provi
 
 ---
 
-> [!NOTE]
-> This Markdown file is automatically generated from [`plugins.yaml`](./assets/plugins/plugins.yaml) and the files in [`plugins.d`](./assets/plugins/plugins.d).
+> **Note:** This Markdown file is automatically generated from [`plugins.yaml`](./assets/plugins/plugins.yaml) and the files in [`plugins.d`](./assets/plugins/plugins.d).
 > **Contributions should only be made by updating those YAML files.**
 > Any update to them results in this Markdown file being re-generated to reflect those changes.

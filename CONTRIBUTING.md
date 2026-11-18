@@ -65,8 +65,7 @@ The rules for deriving this canonical version (used for sorting) are as follows:
 
 If two items end up with the same canonical text, their **original order** is preserved.
 
-> [!NOTE]
-> A bot will automatically check your PR for correct order.
+> **Note:** A bot will automatically check your PR for correct order.
 >
 > > You can manually fix sorting or ask a maintainer to run `/sort-check -fix` (if needed), however, this may not work if the bot has no access to the _head_ repository.
 
@@ -80,8 +79,7 @@ Some files in this repository are automatically generated from other source file
 - For plugin list changes, run `go run ./cmd/generate-plugins` and include the updated `PLUGINS.md`. Run `go run ./cmd/generate-plugins -check` to verify it is current. Official and approved community plugins come from the Silo project's manifests (refreshed daily; see the [plugins README](assets/plugins/README.md)), so don't add them by hand. Plugin authors can maintain their own entries, or point to their own catalog, in a file in `assets/plugins/plugins.d` (see its [README](assets/plugins/plugins.d/README.md)).
 - The generation workflows preview the generated files on pull requests and regenerate them on `main`.
 
-> [!NOTE]
-> For pull requests, a preview of the updated generated files will appear in the **Checks** tab of the pull request.
+> **Note:** For pull requests, a preview of the updated generated files will appear in the **Checks** tab of the pull request.
 > ![image](https://github.com/user-attachments/assets/5ca13a18-f68d-4dc5-b91b-caa9015132d0)
 
 ## Updating your PR
