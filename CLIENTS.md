@@ -334,7 +334,6 @@ To make changes, please edit those YAML files instead.
 
 ---
 
-> [!NOTE]
-> This Markdown file is automatically generated from [`clients.yaml`](./assets/clients/clients.yaml) and the files in [`clients.d`](./assets/clients/clients.d).
+> **Note:** This Markdown file is automatically generated from [`clients.yaml`](./assets/clients/clients.yaml) and the files in [`clients.d`](./assets/clients/clients.d).
 > **Contributions should only be made by updating those YAML files.**
 > Any update to them results in this Markdown file being re-generated to reflect those changes.

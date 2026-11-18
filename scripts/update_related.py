@@ -27,13 +27,15 @@ def parse_sources(text):
         if not line or line.startswith("#"):
             continue
 
-        url, separator, display_name = line.partition("|")
+        url, separator, details = line.partition("|")
+        display_name, _, description = details.partition("|")
         url = url.strip().rstrip("/")
         display_name = display_name.strip()
+        description = " ".join(description.split())
         if not separator or not url or not display_name:
             raise ValueError(
                 f"{SOURCE.name}:{line_number}: expected "
-                "'https://github.com/owner/repository | Display name'"
+                "'https://github.com/owner/repository | Display name | Optional description'"
             )
 
         match = re.fullmatch(r"https://github\.com/([^/]+)/([^/]+)", url)
@@ -45,7 +47,7 @@ def parse_sources(text):
             raise ValueError(f"{SOURCE.name}:{line_number}: invalid display name")
 
         seen_urls.add(url.casefold())
-        sources.append((url, match.group(1), match.group(2), display_name))
+        sources.append((url, match.group(1), match.group(2), display_name, description))
 
     return sources
 
@@ -82,10 +84,14 @@ def escape_markdown(text):
     return "".join("\\" + char if char in r"\`*_[]" else char for char in text)
 
 
+def ensure_punctuation(text):
+    return text if text.endswith((".", "!", "?")) else f"{text}."
+
+
 def render_entries(sources, descriptions):
     entries = [
-        f"- [{escape_markdown(display_name)}]({url}) - {escape_markdown(descriptions[url])}"
-        for url, _owner, _repository, display_name in sources
+        f"- [{escape_markdown(display_name)}]({url}) - {escape_markdown(ensure_punctuation(descriptions[url]))}"
+        for url, _owner, _repository, display_name, _description in sources
     ]
     return "\n".join(sorted(entries, key=str.casefold))
 
@@ -115,8 +121,8 @@ def main():
     try:
         sources = parse_sources(SOURCE.read_text(encoding="utf-8"))
         descriptions = {
-            url: fetch_repository(owner, repository)
-            for url, owner, repository, _display_name in sources
+            url: description or fetch_repository(owner, repository)
+            for url, owner, repository, _display_name, description in sources
         }
         generated = replace_generated_section(
             README.read_text(encoding="utf-8"),
