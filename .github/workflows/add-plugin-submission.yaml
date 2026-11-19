@@ -2,7 +2,7 @@ name: Add plugin submission
 
 on:
   issues:
-    types: [opened]
+    types: [opened, labeled]
 
 permissions:
   contents: write
