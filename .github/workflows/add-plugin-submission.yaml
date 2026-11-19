@@ -1,0 +1,78 @@
+name: Add plugin submission
+
+on:
+  issues:
+    types: [opened]
+
+permissions:
+  contents: write
+  issues: write
+  pull-requests: write
+
+concurrency:
+  group: add-plugin-submission-${{ github.event.issue.number }}
+  cancel-in-progress: false
+
+jobs:
+  add-plugin:
+    if: contains(github.event.issue.labels.*.name, 'request') && startsWith(github.event.issue.title, 'Plugin submission:')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5
+        with:
+          ref: ${{ github.event.repository.default_branch }}
+
+      - uses: actions/setup-go@924ae3a1cded613372ab5595356fb5720e22ba16 # v6
+        with:
+          go-version-file: go.mod
+          cache: true
+
+      - name: Add plugin from issue
+        env:
+          ISSUE_BODY: ${{ github.event.issue.body }}
+        run: go run ./cmd/add-plugin
+
+      - name: Test plugin submission tooling
+        run: go test ./cmd/add-plugin ./cmd/generate-plugins
+
+      - name: Generate and verify plugin list
+        run: |
+          go run ./cmd/generate-plugins
+          go run ./cmd/generate-plugins -check
+
+      - name: Open pull request
+        id: pull-request
+        uses: peter-evans/create-pull-request@22a9089034f40e5a961c8808d113e2c98fb63676 # v7
+        with:
+          add-paths: |
+            PLUGINS.md
+            assets/plugins/plugins.yaml
+          base: ${{ github.event.repository.default_branch }}
+          branch: automation/plugin-submission-${{ github.event.issue.number }}
+          delete-branch: true
+          commit-message: |
+            feat(plugins): add plugin from issue #${{ github.event.issue.number }}
+
+            Co-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>
+          title: "feat(plugins): add plugin from submission #${{ github.event.issue.number }}"
+          body: |
+            Add the plugin submitted in #${{ github.event.issue.number }}.
+
+            The entry was generated from the repository's public Silo plugin manifest. Please review the category, description, and project suitability before merging.
+
+      - name: Notify submitter
+        if: steps.pull-request.outputs.pull-request-url != ''
+        env:
+          GH_TOKEN: ${{ github.token }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+          PULL_REQUEST_URL: ${{ steps.pull-request.outputs.pull-request-url }}
+        run: gh issue comment "$ISSUE_NUMBER" --body "Thanks! I opened $PULL_REQUEST_URL for review."
+
+      - name: Report automation failure
+        if: failure()
+        env:
+          GH_TOKEN: ${{ github.token }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          gh issue comment "$ISSUE_NUMBER" --body "The automated submission could not create a pull request. Check the workflow run for details: $RUN_URL"
