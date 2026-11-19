@@ -1,47 +1,48 @@
-name: "📱 Add Client"
-description: >
-  Do you have a client that is not yet listed and want it to be listed in the repo?
-
-title: "Add Client <client>"
+name: "Suggest a client"
+description: Submit a client for the catalog and an automated pull request.
+title: "Client submission: "
 labels:
   - request
-  - client
-
-body:      
+body:
   - type: markdown
     attributes:
       value: |
-        > [!IMPORTANT]
-        > Before submitting, please read the **[Contribution Guidelines](https://github.com/awesome-silo/awesome-silo/blob/main/CONTRIBUTING.md)**.
-        >  
-        > If you are familiar with GitHub and know how to create a Pull Request, please consider submitting your suggestion **directly as a PR** instead of opening an issue:
-        > https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request
-        >
-        > Pull Requests are usually reviewed faster. Issues are mainly intended for users who are unsure how to contribute via PR.
-        
-        **Thank you so much for your help to make this list even better! 💖**
-
+        Submit the client details below to generate a pull request for review. Please check the [contribution guidelines](https://github.com/awesome-silo/awesome-silo/blob/main/CONTRIBUTING.md) and existing client list first. Automation does not merge pull requests.
   - type: input
-    id: client-name
+    id: name
     attributes:
-      label: Client Name
+      label: Client name
     validations:
       required: true
-
   - type: input
-    id: client-website
+    id: website
     attributes:
-      label: Client Website
-      description: Link to the project (e.g. GitHub)
-      placeholder: ex. https://github.com/awesome-silo/awesome-silo
+      label: Client website
+      description: Homepage or repository URL.
+      placeholder: https://example.com/client
     validations:
       required: true
-      
+  - type: input
+    id: source
+    attributes:
+      label: Open-source repository URL
+      description: Leave blank if the client is not open source.
+      placeholder: https://github.com/owner/client
+  - type: dropdown
+    id: compatibility
+    attributes:
+      label: Compatibility
+      options:
+        - Native
+        - Compatible
+      description: Native uses the Silo API; Compatible uses Jellyfin emulation.
+    validations:
+      required: true
   - type: checkboxes
     id: targets
     attributes:
       label: Targets
-      description: Which platforms does the client target?
+      description: Select at least one supported platform.
       options:
         - label: Browser
         - label: Windows
@@ -49,48 +50,37 @@ body:
         - label: Linux
         - label: iOS
         - label: Android
-        - label: Sailfish OS
+        - label: SailfishOS
         - label: HarmonyOS
-        - label: Nintendo Switch
-        - label: Apple TV
-        - label: Android TV
+        - label: NintendoSwitch
+        - label: Xbox
+        - label: PlayStation
+        - label: AppleTV
+        - label: tvOS
+        - label: AndroidTV
         - label: Kodi
         - label: Roku
+        - label: Tizen
+        - label: Vega
         - label: WebOS
-      
-  - type: checkboxes
+  - type: dropdown
     id: price
     attributes:
       label: Price
-      description: In-App Purchases should be marked as Paid
+      description: Include paid in-app purchases or subscriptions.
       options:
-        - label: Free
-        - label: Paid
-
+        - Free
+        - Paid
+        - Free and paid
+    validations:
+      required: true
   - type: textarea
     id: downloads
     attributes:
-      label: Download Links
-      description: Please provide all download links you can find, e.g. App Store, Play Store, ...
+      label: Download links
+      description: One link per line in the format "Name | URL".
       placeholder: |
-        GitHub: https://github.com/awesome-silo/client
-        App Store: https://apps.apple.com/app/id0000000000
+        GitHub | https://github.com/owner/client/releases
+        App Store | https://apps.apple.com/app/id123456
     validations:
       required: true
-  
-  - type: checkboxes
-    id: checklist
-    attributes:
-      label: Checklist
-      options:
-        - label: I have read the Contribution Guidelines
-          required: true
-        - label: The client appears to be actively maintained
-          required: true
-        - label: I searched the list to make sure this client is not already included
-          required: true
-
-  - type: textarea
-    id: other
-    attributes:
-      label: Anything else?

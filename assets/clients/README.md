@@ -14,6 +14,10 @@ go run ./cmd/generate-clients -check
 
 The generator validates each YAML file against [`schema.json`](schema.json) and checks that client target and type references exist.
 
+To suggest a client, use the [client issue form](https://github.com/awesome-silo/awesome-silo/issues/new?template=010-request-client.yaml). Supply its website, platforms, compatibility, price, and download links. The workflow adds a proposed entry to `clients.yaml`, generates `CLIENTS.md`, and opens a pull request for review; it does not merge it. Include a source URL only for open-source clients. Download links are recorded as text links.
+
+The workflow runs when a matching issue is opened with the `request` label or when that label is added later. On failure it comments with a link to the run; after correcting the issue, remove and reapply the label to retry. The repository must allow GitHub Actions to create pull requests.
+
 [`schema.json`](schema.json) describes the format of `clients.yaml` and the `clients.d` files. Editors that support the `yaml-language-server` comment at the top of each file use it to check fields and suggest values as you type.
 
 ---
