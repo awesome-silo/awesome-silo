@@ -58,6 +58,7 @@ To make changes, please edit those YAML files instead.
 | [Moonfin](https://moonfin.io/#top) | ❌ | ✅ | ✅ | ❎ | [![App Store](https://img.shields.io/badge/App%20Store-grey?logo=App+Store&label=)](https://apps.apple.com/app/id6761283970) [![github](https://img.shields.io/github/downloads/Moonfin-Client/Moonfin-Core/total?logo=github&label=GitHub)](https://github.com/Moonfin-Client/Moonfin-Core/releases) [![github](https://img.shields.io/github/downloads/Moonfin-Client/Roku/total?logo=github&label=GitHub)](https://github.com/Moonfin-Client/Roku/releases) [![github](https://img.shields.io/github/downloads/Moonfin-Client/Smart-TV/total?logo=github&label=GitHub)](https://github.com/Moonfin-Client/Smart-TV/releases) [![F-Droid](https://img.shields.io/badge/F-Droid-grey?logo=F-Droid&label=)](https://f-droid.org/en/packages/org.jellyfin.mobile/) [![Amazon](https://img.shields.io/badge/Amazon-grey?logo=Amazon&label=)](https://www.amazon.com/Moonfin/dp/B0H76BG3DW) [![Google Play](https://img.shields.io/badge/Google%20Play-grey?logo=Google+Play&label=)](https://play.google.com/store/apps/details?id=org.moonfin.androidtv) [![Roku](https://img.shields.io/badge/Roku-grey?logo=Roku&label=)](https://channelstore.roku.com/details/92a83c9f4112b76a7bcee3dc076254ca:3251a91bf7af7339652d5409ccfdcb39/moonfin) [![Microsoft Store](https://img.shields.io/badge/-grey?logo=&label=Microsoft+Store)](https://apps.microsoft.com/detail/9plb327dd51d) |
 | [Plozz](https://github.com/brandomoore/Plozz) | ❌ | ✅ | ✅ | ❎ | [![App Store](https://img.shields.io/badge/App%20Store-grey?logo=App+Store&label=)](https://apps.apple.com/app/id6782668147) |
 | [Silo for Apple](https://github.com/Silo-Server/silo-apple) | ✅ | ✅ | ✅ | ❎ | [![github](https://img.shields.io/github/downloads/Silo-Server/silo-apple/total?logo=github&label=GitHub)](https://github.com/Silo-Server/silo-apple/releases) |
+| [Vivid](https://vividapp.co/) | ❌ | ✅ | ✅ | ❎ | [App Store](https://apps.apple.com/app/id6809770754) |
 
 
 ### Android
@@ -85,6 +86,7 @@ To make changes, please edit those YAML files instead.
 | Name | Official | OSS | Free | Paid | Downloads |
 | ---- | -------- | --- | ---- | ---- | --------- |
 | [Moonfin](https://moonfin.io/#top) | ❌ | ✅ | ✅ | ❎ | [![App Store](https://img.shields.io/badge/App%20Store-grey?logo=App+Store&label=)](https://apps.apple.com/app/id6761283970) [![github](https://img.shields.io/github/downloads/Moonfin-Client/Moonfin-Core/total?logo=github&label=GitHub)](https://github.com/Moonfin-Client/Moonfin-Core/releases) [![github](https://img.shields.io/github/downloads/Moonfin-Client/Roku/total?logo=github&label=GitHub)](https://github.com/Moonfin-Client/Roku/releases) [![github](https://img.shields.io/github/downloads/Moonfin-Client/Smart-TV/total?logo=github&label=GitHub)](https://github.com/Moonfin-Client/Smart-TV/releases) [![F-Droid](https://img.shields.io/badge/F-Droid-grey?logo=F-Droid&label=)](https://f-droid.org/en/packages/org.jellyfin.mobile/) [![Amazon](https://img.shields.io/badge/Amazon-grey?logo=Amazon&label=)](https://www.amazon.com/Moonfin/dp/B0H76BG3DW) [![Google Play](https://img.shields.io/badge/Google%20Play-grey?logo=Google+Play&label=)](https://play.google.com/store/apps/details?id=org.moonfin.androidtv) [![Roku](https://img.shields.io/badge/Roku-grey?logo=Roku&label=)](https://channelstore.roku.com/details/92a83c9f4112b76a7bcee3dc076254ca:3251a91bf7af7339652d5409ccfdcb39/moonfin) [![Microsoft Store](https://img.shields.io/badge/-grey?logo=&label=Microsoft+Store)](https://apps.microsoft.com/detail/9plb327dd51d) |
+| [Vivid](https://vividapp.co/) | ❌ | ✅ | ✅ | ❎ | [App Store](https://apps.apple.com/app/id6809770754) |
 
 
 ### Apple TV
@@ -92,6 +94,7 @@ To make changes, please edit those YAML files instead.
 | Name | Official | OSS | Free | Paid | Downloads |
 | ---- | -------- | --- | ---- | ---- | --------- |
 | [Silo for Apple](https://github.com/Silo-Server/silo-apple) | ✅ | ✅ | ✅ | ❎ | [![github](https://img.shields.io/github/downloads/Silo-Server/silo-apple/total?logo=github&label=GitHub)](https://github.com/Silo-Server/silo-apple/releases) |
+| [Vivid](https://vividapp.co/) | ❌ | ✅ | ✅ | ❎ | [App Store](https://apps.apple.com/app/id6809770754) |
 
 
 ### Android TV
