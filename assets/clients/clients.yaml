@@ -900,6 +900,22 @@ clients:
         text: App Store
         url: https://apps.apple.com/app/id6809770754
 
+  - name: Hopper
+    targets:
+      - WebOS
+    types:
+      - Native
+    website: https://github.com/wjbeckett/hopper-webos
+    oss: https://github.com/wjbeckett/hopper-webos
+    official: false
+    price:
+      free: true
+      paid: false
+    downloads:
+      - type: text
+        text: Github
+        url: https://github.com/wjbeckett/hopper-webos/releases
+
 targets:
   - key: Browser
     display: "🌎 Browser-Based"
