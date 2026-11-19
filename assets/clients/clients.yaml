@@ -50,6 +50,18 @@ clients:
         owner: Silo-Server
         repo: silo-roku
 
+  - name: "KOLO"
+    targets: [Kodi]
+    types: [Native]
+    oss: https://github.com/liam8888999/KOLO
+    official: false
+    price:
+      free: true
+    downloads:
+      - type: github
+        owner: liam8888999
+        repo: KOLO
+
   - name: Moonfin
     targets: [Android, iOS, Windows, Linux, macOS, AndroidTV, AppleTV, Tizen, WebOS, Vega, Roku, Xbox]
     types: [Native]

@@ -104,6 +104,7 @@ To make changes, please edit those YAML files instead.
 | Name | Official | OSS | Free | Paid | Downloads |
 | ---- | -------- | --- | ---- | ---- | --------- |
 | [a Kodi build  `⚒️`](https://github.com/Pedrod86/Relay-Media-silo-build) | ❌ | ✅ | ✅ | ❎ | [![github](https://img.shields.io/github/downloads/Pedrod86/Relay-Media-silo-build/total?logo=github&label=GitHub)](https://github.com/Pedrod86/Relay-Media-silo-build/releases) |
+| [KOLO](https://github.com/liam8888999/KOLO) | ❌ | ✅ | ✅ | ❎ | [![github](https://img.shields.io/github/downloads/liam8888999/KOLO/total?logo=github&label=GitHub)](https://github.com/liam8888999/KOLO/releases) |
 
 
 ### Roku
