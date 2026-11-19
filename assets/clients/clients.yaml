@@ -882,6 +882,24 @@ clients:
         owner: Phioster
         repo: sanctum_daemon
 
+  - name: Vivid
+    targets:
+      - iOS
+      - AppleTV
+      - tvOS
+    types:
+      - Native
+    website: https://vividapp.co/
+    oss: https://github.com/blurbery/vivid
+    official: false
+    price:
+      free: true
+      paid: false
+    downloads:
+      - type: text
+        text: App Store
+        url: https://apps.apple.com/app/id6809770754
+
 targets:
   - key: Browser
     display: "🌎 Browser-Based"
