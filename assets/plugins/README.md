@@ -14,6 +14,12 @@ go run ./cmd/generate-plugins -check
 
 Each YAML file is validated against [`schema.json`](schema.json). The generator also rejects plugins that use an undefined category and duplicate plugin names.
 
+## Submitting a plugin
+
+Use the [Suggest a plugin issue form](https://github.com/awesome-silo/awesome-silo/issues/new?template=050-suggest-plugin.yaml) to submit a public GitHub repository URL. The automated workflow requires a root `manifest.json` for one plugin with enough metadata to derive its name and description, plus a category recognized by this catalog (or a capability mapped in `capability_categories`). It adds the entry as tier `other`, regenerates `PLUGINS.md`, and opens a pull request for review. It does not merge the pull request.
+
+The workflow reads only GitHub repository metadata and `manifest.json`; it does not run code from the submitted repository. If validation fails, the issue receives a link to the workflow run. Repositories without a compatible manifest can still be suggested by opening a regular issue or by submitting a pull request with a YAML entry.
+
 ## Blacklisted owners
 
 The generator reads `PLUGIN_BLACKLISTED_OWNERS` as a comma- or newline-separated list of GitHub owners and excludes their plugins across all manifests and plugin files. In CI, provide this value through a repository Actions secret with the same name. To regenerate locally, set the environment variable before running the generator.

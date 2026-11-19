@@ -181,3 +181,9 @@ plugins:
     tier: other
     url: https://github.com/foux/silo-plugin-watchprovider-scrob
     oss: https://github.com/foux/silo-plugin-watchprovider-scrob
+  - name: "Box Set Collections"
+    description: "Shows every movie box set, and TV franchises from TheTVDB, as collections kept in step with your library."
+    category: collections
+    tier: other
+    url: https://github.com/neilmc78/silo-plugin-boxset-collections
+    oss: https://github.com/neilmc78/silo-plugin-boxset-collections

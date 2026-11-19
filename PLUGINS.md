@@ -11,11 +11,14 @@ To make changes, please edit those YAML files instead.
   <h1 align="center"><a href="https://github.com/awesome-silo/awesome-silo">Awesome Silo</a> > Plugins</h1>
 </p>
 
+<p>Have a plugin to add? <a href="https://github.com/awesome-silo/awesome-silo/issues/new?template=050-suggest-plugin.yaml">Submit its GitHub repository URL</a> to open a pull request for review.</p>
+
 ## 📂 Collections & Playlists
 
 | Name | Tier | OSS | Description |
 | ---- | ---- | --- | ----------- |
 | [App Links](https://github.com/theramindex/silo-plugin-app-links) | Other | ✅ | Configurable external app launcher with fullscreen iframe shells and an admin app link manager. |
+| [Box Set Collections](https://github.com/neilmc78/silo-plugin-boxset-collections) | Other | ✅ | Shows every movie box set, and TV franchises from TheTVDB, as collections kept in step with your library. |
 | [Comic Pages (Deprecated)](https://github.com/crowquillx/silo-comic-pages) | Other | ✅ | Deprecated: This plugin is no longer maintained and may not work with current Silo releases. It will be removed from this catalog. |
 
 ## ▶️ Playback

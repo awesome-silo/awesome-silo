@@ -1,0 +1,21 @@
+name: "Suggest a plugin"
+description: Submit a public Silo plugin repository URL for catalog review.
+title: "Plugin submission: "
+labels:
+  - request
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Submit the GitHub repository for one Silo plugin. The repository must be public and have a root `manifest.json` with a display name, summary, and catalog category (or a category-mapped capability).
+
+        An automated workflow will validate the URL and open a pull request for review against the [contribution guidelines](https://github.com/awesome-silo/awesome-silo/blob/main/CONTRIBUTING.md). The automation does not merge changes.
+
+  - type: input
+    id: repository-url
+    attributes:
+      label: Plugin repository URL
+      description: Enter the repository URL, not a file, release, or subdirectory link.
+      placeholder: https://github.com/owner/plugin
+    validations:
+      required: true
