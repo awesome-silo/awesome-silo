@@ -916,6 +916,25 @@ clients:
         text: Github
         url: https://github.com/wjbeckett/hopper-webos/releases
 
+  - name: Founders Theater
+    targets:
+      - Windows
+      - Linux
+      - Android
+      - Vega
+    types:
+      - Compatible
+    website: https://slimshizn.github.io/Founders-Theater/
+    oss: https://github.com/slimshizn/Founders-Theater
+    official: false
+    price:
+      free: true
+      paid: false
+    downloads:
+      - type: text
+        text: GitHub
+        url: https://slimshizn.github.io/Founders-Theater/repository.silo.theater-1.0.3.zip
+
 targets:
   - key: Browser
     display: "🌎 Browser-Based"
