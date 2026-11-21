@@ -29,6 +29,8 @@ None available as yet.
 ## Companion Applications
 
 - [Silo Franchises](https://github.com/Sietsevdm/silo-franchises) - A free, self-hosted companion to Silo for building and maintaining movie and TV franchise collections.
+- [Siloscope](https://github.com/safetyp1/siloscope) - A mobile-friendly dashboard for monitoring Silo and InfiniDysk, viewing Silo and Plex playback, and managing media replacements with Sonarr and Radarr.
+- [Siloscope (enhanced fork)]() - A monitoring and statistics dashboard for Silo and Plex in one place: live streams, server health, full playback history and Tautulli-style stats per user, with Silo and Plex accounts linked to the same person. Access is behind your Silo administrator sign-in, two-step included. Built mobile-first, it runs comfortably on a phone.
 
 ## 🌌 Related
 
