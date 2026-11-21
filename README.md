@@ -19,11 +19,16 @@
 ### 📜 Snippets
 
 <!--lint ignore awesome-list-item-->
-
+None available as yet.
 
 ## 📖 Guides
 
 <!-- sort list:guides -->
+None available as yet.
+
+## Companion Applications
+
+- [Silo Franchises](https://github.com/Sietsevdm/silo-franchises) - A free, self-hosted companion to Silo for building and maintaining movie and TV franchise collections.
 
 ## 🌌 Related
 
