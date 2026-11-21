@@ -29,6 +29,7 @@ To make changes, please edit those YAML files instead.
 | [IntroDB.app Markers](https://github.com/blurbery/silo-plugin-markers-introdb-app) | Other | ✅ | Fetch TV intro, recap, and credit markers from IntroDB.app. |
 | [Playback Reporting](https://github.com/Brady3035/silo-plugin-playback-reporting) | Other | ✅ | Reports on what your users watch: activity over time, per-user sessions and stream types, and a breakdown of movies, shows and audiobooks by plays, time or smart plays. |
 | [Prefetch](https://github.com/CManson38/silo-plugin-sonarr-prefetch) | Other | ✅ | Request Sonarr searches for upcoming TV episodes as you watch in Silo. |
+| [Prerolls (Cinema Mode)](https://github.com/apoapostolov/apos-silo-plugins/tree/main/plugins/silo-prerolls) | Other | ✅ | Play pre-roll videos before movies and TV episodes. Folder-based, smart selection, seasonal scheduling. |
 | [Theme Songs](https://github.com/crowquillx/silo-theme-songs) | Other | ✅ | Downloads theme songs for movies and series, with season openings and endings for anime from AnimeThemes. |
 
 ## 🔗 Integration & Sync
@@ -37,13 +38,13 @@ To make changes, please edit those YAML files instead.
 | ---- | ---- | --- | ----------- |
 | [Floppy Watch Provider](https://github.com/Silo-Server/silo-plugin-watchprovider-floppy) | 🔹 Official | ✅ | Sync Silo watch activity with a self-hosted Floppy instance. |
 | [MDBList Watch Provider](https://github.com/Silo-Server/silo-plugin-watchprovider-mdblist) | 🔹 Official | ✅ | Sync Silo watch history, watchlists, favorites, and ratings with MDBList. |
-| [Seerr](https://github.com/Silo-Server/silo-plugins-requests-seerr) | 🔹 Official | ✅ | Fulfill content requests through a Seerr (Overseerr/Jellyseerr) instance. |
 | [Simkl Watch Provider](https://github.com/Silo-Server/silo-plugin-watchprovider-simkl) | 🔹 Official | ✅ | Sync Silo watch history, plan-to-watch list, dropped shows, and ratings with Simkl. |
-| [Sonarr / Radarr](https://github.com/Silo-Server/silo-plugins-requests-arr) | 🔹 Official | ✅ | Fulfills movie/series requests against multi-instance Sonarr/Radarr. |
 | [Scrob Watch Provider](https://github.com/Silo-Community/silo-plugin-watchprovider-scrob) | 👥 Community | ✅ | Sync Silo watch activity with a self-hosted Scrob instance. |
+| [Seerr Requests](https://github.com/Silo-Community/silo-plugins-requests-seerr) | 👥 Community | ✅ | Submit Silo movie and series requests through a Seerr-compatible server. |
+| [Sonarr & Radarr Requests](https://github.com/Silo-Community/silo-plugins-requests-arr) | 👥 Community | ✅ | Route movie and series requests to one or more Sonarr and Radarr instances. |
 | [AniList Sync](https://github.com/crowquillx/silo-anilist-sync) | Other | ✅ | Syncs anime watch progress and movie ratings with AniList through Silo's watch-provider pipeline. |
 | [Discord](https://github.com/thezak48/silo-plugin-discord) | Other | ✅ | Integrates Silo with Discord. |
-| [Letterboxd Watch Provider](https://github.com/bulderi/silo-plugin-letterboxd) | Other | ✅ | Sync a Silo profile's watchlist with a Letterboxd watchlist, movies only. |
+| [Letterboxd Watch Provider](https://github.com/bulderi/silo-plugin-letterboxd) | Other | ✅ | Sync a Silo profile's watchlist, ratings, and diary with Letterboxd, movies only. |
 | [Plex Artwork Sync](https://github.com/BEisem/silo-plex-artwork-sync) | Other | ✅ | Keeps Silo's movie and series posters and collections matching Plex, including Kometa's overlays. |
 | [PunchPlay Watch Provider](https://github.com/PunchPlay/silo-plugin-punchplay) | Other | ✅ | Sync Silo watch history, ratings, watchlist, favourites and dropped shows with PunchPlay, with live scrobbling. |
 | [Riven Requests](https://github.com/olivertgwalton/silo-plugins-request-riven) | Other | ✅ | Submit Silo movie and series requests directly to a riven-rs instance. |
@@ -100,7 +101,7 @@ To make changes, please edit those YAML files instead.
 | [OMDb](https://github.com/zerodayz1/silo-plugin-omdb) | Other | ✅ | Enriches media items with IMDb ratings and Rotten Tomatoes critic scores via the OMDb API. |
 | [OMDb Metadata](https://github.com/neilmc78/silo-plugin-metadata-omdb) | Other | ✅ | Matches films TMDB does not list, such as fan films and fan edits, by their IMDb ID. |
 | [Shoko Anime Metadata](https://github.com/RickDB/silo-plugin-metadata-shoko) | Other | ✅ | Shoko anime metadata with native Shoko search and Group-to-Series mapping. |
-| [ShokoAnime VFS (Deprecated)](https://github.com/crowquillx/silo-shoko-plugin) | Other | ✅ | Deprecated: This plugin is no longer maintained and may not work with current Silo releases. It will be removed from this catalog. |
+| [ShokoAnime VFS](https://github.com/crowquillx/silo-shoko-plugin) | Other | ✅ | Builds a Shoko-backed virtual filesystem for Silo libraries. |
 | [Stash Metadata](https://github.com/Net005/silo-plugin-metadata-stash) | Other | ✅ | Use StashApp as Silo's scene metadata and watch provider. |
 
 ## 🌐 Networking & Remote Access
