@@ -2,6 +2,17 @@
   "source": "https://raw.githubusercontent.com/apoapostolov/apos-silo-plugins/main/repository.json",
   "plugins": [
     {
+      "id": "apoapostolov.silo-prerolls",
+      "name": "Prerolls (Cinema Mode)",
+      "summary": "Play pre-roll videos before movies and TV episodes. Folder-based, smart selection, seasonal scheduling.",
+      "repo_url": "https://github.com/apoapostolov/apos-silo-plugins/tree/main/plugins/silo-prerolls",
+      "capabilities": [
+        "http_routes.v1",
+        "scheduled_task.v1",
+        "event_consumer.v1"
+      ]
+    },
+    {
       "id": "community.watchprovider.trakt",
       "name": "Trakt Watch Provider",
       "summary": "Sync Silo watch activity, lists, ratings, and dropped shows with Trakt.",
