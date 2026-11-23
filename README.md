@@ -41,7 +41,7 @@ The links are maintained in [related.txt](related.txt), and GitHub descriptions 
 <!-- related-projects:start -->
 - [FreeBSD Silo plugin catalog](https://github.com/mvanbaak/silo-plugins-freebsd) - This repository cross-compiles Silo's official plugin catalog for FreeBSD and republishes it in a catalog Silo can consume.
 - [Seasonal episode lists](https://github.com/outragedpeanut/silo-seasonal-lists) - Seasonal episode lists for use with the Silo Seasonal Episodes plugin.
-- [Siloquy](https://github.com/BEisem/siloquy) - Live Silo media server stats as Discord voice-channel counters.
+- [Siloquy](https://github.com/BEisem/siloquy) - Discord companion bot for Silo: live server stats as voice-channel counters, plus an optional @Watching role for members who are playing something.
 <!-- related-projects:end -->
 
 ## Communities
